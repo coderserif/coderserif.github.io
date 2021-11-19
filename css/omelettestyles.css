@@ -1,0 +1,45 @@
+p {
+  color: rgb(117, 70, 0);
+  font-family: "Monaco", monospace, sans-serif;
+}
+
+h1 {
+  font-family: "Cursive", cursive, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(131, 52, 0);
+}
+
+h2 {
+  font-family: "Lucida Console", monospace, sans-serif;
+  color: rgb(104, 62, 0);
+  font-weight: bold;
+}
+
+figcaption {
+  color: rgb(24, 24, 24);
+}
+
+ul,
+ol {
+  font-family: "Monaco", monospace, sans-serif;
+  color: rgb(61, 39, 4);
+}
+
+img {
+  height: 50%;
+  width: 50%;
+  border-style: double;
+  border-width: 5px;
+}
+
+body {
+  background-color: rgb(255, 249, 231);
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+a {
+  font-family: "Monaco", monospace, sans-serif;
+  color: rgb(228, 46, 0);
+}
