@@ -7,7 +7,7 @@ a {
 body {
   background-color: rgb(255, 227, 214);
   margin-left: 250px;
-  margin-right: 250px;
+  margin-right: 150px;
 }
 
 h1 {
@@ -25,4 +25,10 @@ h2 {
 p,
 figcaption {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  height: 33%;
+  width: 33%;
+  
 }
