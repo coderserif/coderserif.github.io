@@ -29,8 +29,8 @@ ol {
 }
 
 img {
-  height: 50%;
-  width: 50%;
+  height: 40%;
+  width: 40%;
   border-style: double;
   border-width: 5px;
 }
@@ -44,4 +44,10 @@ body {
 a {
   font-family: "Monaco", monospace, sans-serif;
   color: rgb(228, 46, 0);
+}
+
+.funyme {
+  height: 25%;
+  width: 25%;
+  border-style: none;
 }
