@@ -19,3 +19,9 @@ a {
 
 a:hover {
   text-decoration: underline; // changed from text:decoration:none
+}
+
+img {
+  height: 51%;
+  width: 51%;
+}
