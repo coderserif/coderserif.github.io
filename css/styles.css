@@ -4,6 +4,14 @@ a {
   color: rgb(228, 46, 0);
 }
 
+a {
+  text-decoration: none; // changed from text-decoration:underline
+}
+
+a:hover {
+  text-decoration: underline; // changed from text:decoration:none
+}
+
 body {
   background-color: rgb(255, 227, 214);
   margin-left: 250px;
@@ -18,7 +26,7 @@ h1 {
   color: rgb(131, 52, 0);
 }
 
-h2 {
+h2, h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
