@@ -46,6 +46,14 @@ a {
   color: rgb(228, 46, 0);
 }
 
+a {
+  text-decoration: none; // changed from text-decoration:underline
+}
+
+a:hover {
+  text-decoration: underline; // changed from text:decoration:none
+}
+
 .funyme {
   height: 25%;
   width: 25%;
