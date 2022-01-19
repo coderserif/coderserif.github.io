@@ -31,6 +31,14 @@ a:hover {
   text-decoration: underline; // changed from text:decoration:none
 }
 
+a {
+  cursor: wait;
+}
+
+.winner {
+  cursor: help;
+}
+
 img {
   height: 20%;
   width: 20%;
