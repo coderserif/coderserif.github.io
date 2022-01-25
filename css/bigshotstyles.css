@@ -32,7 +32,7 @@ a:hover {
 }
 
 a {
-  cursor: wait;
+  cursor: pointer;
 }
 
 .winner {
