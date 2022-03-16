@@ -15,6 +15,27 @@
       content="Serif's website. visit if you want. or don't. I personally do not care :)"
     />
     <meta property="og:image" content="/img/neutral.png" />
+    <script>
+      fetch("/json/comixsettings.json")
+        .then((response) => response.json())
+        .then((json) => {
+          comixsetting = json;
+          load(comixsetting);
+        })
+        .catch((error) => {
+          alert(
+            "Failed to load comixsettings, Error Message:\n" +
+              error +
+              "\n\nTry Reloading..."
+          );
+          document.getElementById("comix").innerHTML =
+            "Data Failed To Load :(<br>";
+        });
+      function load(comixsetting) {
+        var comix = document.getElementById("comix");
+        comix.setAttribute("href", "comix?comix=" + (comixsetting.max - 1));
+      }
+    </script>
     <title>Home of Serif</title>
     <style>
       /* When it is unvisited link */
@@ -40,7 +61,7 @@
     <h3>Thanks for visiting :)</h3>
     <a href="https://coderserif.github.io/links">links</a>
     <br />
-    <a href="https://coderserif.github.io/comix?comix=0">comics</a>
+    <a id="comix">comics</a>
     <hr />
     <p>htmls and more.</p>
     <a href="https://coderserif.github.io/omelette">omelette website</a>
