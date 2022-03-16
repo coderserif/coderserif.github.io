@@ -54,5 +54,7 @@ img {
 html {
   position: relative;
   animation-name: drop;
-  animation-duration: 2s;
+  animation-duration: 0.80s;
   }
+
+  
