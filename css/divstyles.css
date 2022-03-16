@@ -167,3 +167,22 @@ a:hover {
 #bamboo8:active {
   background-image: url(/img-redpanda/snowLeopard1.jpg);
 }
+
+@keyframes drop {
+  0% {
+    left: 0px;
+    top: -700px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+html {
+  position: relative;
+  animation-name: drop;
+  animation-duration: 1s;
+}
