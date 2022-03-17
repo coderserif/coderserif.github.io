@@ -16,10 +16,23 @@
       content="Serif's epic comix and stuff. It's funny I think."
     />
     <meta property="og:image" content="/img/neutral.png" />
+    <script>
+      function copyToClipboard(text) {
+      var inputc = document.body.appendChild(document.createElement("input"));
+      inputc.value = window.location.href;
+      inputc.focus();
+      inputc.select();
+      document.execCommand('copy');
+      inputc.parentNode.removeChild(inputc);
+      alert("Link copied.");
+      }
+      </script>
     <title>Serif's Comix</title>
   </head>
   <body id="body">
     <h1>Serif's Comix</h1>
+    <a onclick="copyToClipboard()">copy link</a>
+    <br />
     <a href=https://coderserif.github.io>back to main page</a>
     <hr />
     <figcaption>
