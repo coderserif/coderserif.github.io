@@ -35,16 +35,16 @@ figcaption {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-  height: 33%;
-  width: 33%;
-  
+img { 
+  transition: all .1s ease-out; 
+  height: 23%;
+  width: 23%;
 }
+img:hover { 
+    	transform: scale(0.8); 
+    }
 
-.linkimg {
-  height: 25%;
-  width: 25%;
-}
+
 
 @keyframes drop {
   0% {
