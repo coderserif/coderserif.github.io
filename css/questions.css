@@ -13,7 +13,7 @@ a:hover {
 }
 
 body {
-  background-image: url(/img/questionsbg.png);
+  background-image: url(/img/indexbg.png);
   margin-left: 250px;
   margin-right: 150px;
 }
@@ -56,5 +56,6 @@ html {
   position: relative;
   animation-name: drop;
   animation-duration: 0.80s;
-}
+  }
 
+  
