@@ -36,6 +36,7 @@ figcaption {
 }
 
 img { 
+  cursor: pointer;
   transition: all .1s ease-out; 
   height: 23%;
   width: 23%;
