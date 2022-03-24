@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h1,
+h3,
+p {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none; // changed from text-decoration:underline
+}
+
+a:hover {
+  text-decoration: underline; // changed from text:decoration:none
+}
+
+img {
+  height: 51%;
+  width: 51%;
+}

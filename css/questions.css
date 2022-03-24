@@ -1,0 +1,60 @@
+a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(228, 46, 0);
+}
+
+a {
+  text-decoration: none; // changed from text-decoration:underline
+}
+
+a:hover {
+  text-decoration: underline; // changed from text:decoration:none
+}
+
+body {
+  background-image: url(/img/questionsbg.png);
+  margin-left: 250px;
+  margin-right: 150px;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(131, 52, 0);
+}
+
+h2, h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p,
+figcaption, ul, ol, li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  height: 0.01%;
+  width: 0.01%;
+  
+}
+
+.linkimg {
+  height: 25%;
+  width: 25%;
+}
+
+@keyframes drop {
+  0%   {left:0px; top:-700px; opacity: 0;}
+  100%  {left:0px; top:0px; opacity: 1;}
+}
+
+
+html {
+  position: relative;
+  animation-name: drop;
+  animation-duration: 0.80s;
+}
+

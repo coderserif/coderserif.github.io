@@ -1,0 +1,84 @@
+body {
+  background-image: url(/img/omelettebg.png);
+}
+
+p {
+  color: rgb(117, 70, 0);
+  font-family: "Monaco", monospace, sans-serif;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(131, 52, 0);
+}
+
+h2 {
+  font-family: "Lucida Console", monospace, sans-serif;
+  color: rgb(104, 62, 0);
+  font-weight: bold;
+}
+
+figcaption {
+  color: rgb(24, 24, 24);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul,
+ol {
+  font-family: "Monaco", monospace, sans-serif;
+  color: rgb(61, 39, 4);
+}
+
+img {
+  height: 40%;
+  width: 40%;
+  border-style: double;
+  border-width: 5px;
+}
+
+body {
+  background-color: rgb(255, 249, 231);
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+a {
+  font-family: "Monaco", monospace, sans-serif;
+  color: rgb(228, 46, 0);
+}
+
+a {
+  text-decoration: none; // changed from text-decoration:underline
+}
+
+a:hover {
+  text-decoration: underline; // changed from text:decoration:none
+}
+
+.funyme {
+  height: 25%;
+  width: 25%;
+  border-style: none;
+}
+
+@keyframes drop {
+  0% {
+    left: 0px;
+    top: -700px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+html {
+  position: relative;
+  animation-name: drop;
+  animation-duration: 1s;
+}
