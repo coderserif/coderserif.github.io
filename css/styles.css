@@ -4,7 +4,8 @@ a {
   color: rgb(228, 46, 0);
 }
 
-a {
+a,
+#title {
   text-decoration: none; // changed from text-decoration:underline
 }
 
@@ -19,43 +20,90 @@ body {
 }
 
 h1 {
-  font-family: 'Times New Roman', Times, serif;
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 40px;
   font-weight: bold;
-  color: rgb(131, 52, 0);
+  color: rgb(196, 78, 0);
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 p,
 figcaption {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-img {
-  height: 33%;
-  width: 33%;
-  
-}
-
-.linkimg {
-  height: 25%;
-  width: 25%;
+  color: white;
 }
 
 @keyframes drop {
-  0%   {left:0px; top:-700px; opacity: 0;}
-  100%  {left:0px; top:0px; opacity: 1;}
+  0% {
+    left: 0px;
+    top: -700px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
 }
-
 
 html {
   position: relative;
   animation-name: drop;
-  animation-duration: 0.80s;
-  }
+  animation-duration: 0.8s;
+}
 
-  
+#mesittinf {
+  height: 33%;
+  width: 33%;
+}
+
+#links {
+  height: 3%;
+  width: 3%;
+}
+
+#websiteimage {
+  height: 25%;
+  width: 25%;
+  opacity: 90%;
+}
+
+#websiteimage:hover {
+  transition: all 0.1s ease-out;
+  animation-name: bounceButton;
+  animation-duration: 0.5s;
+}
+
+#links:hover {
+  transition: all 0.1s ease-out;
+  animation-name: bounceButton;
+  animation-duration: 0.5s;
+}
+
+#welcometext {
+  margin-left: 70px;
+}
+
+@keyframes bounceButton {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.88);
+  }
+  50% {
+    transform: scale(0.93);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
