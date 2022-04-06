@@ -37,13 +37,33 @@ figcaption {
 
 img { 
   cursor: pointer;
-  transition: all .1s ease-out; 
   height: 23%;
   width: 23%;
 }
-img:hover { 
-    	transform: scale(0.8); 
-    }
+
+img:hover {
+  transition: all .1s ease-out; 
+  animation-name: bounceButton;
+  animation-duration: .5s;
+}
+
+@keyframes bounceButton {
+  0% {
+      transform: scale(1);
+  }
+  25% {
+      transform: scale(0.88);
+  }
+  50% {
+      transform: scale(0.93);
+  }
+  75% {
+      transform: scale(0.90);
+  }
+  100% {
+    transform: scale(1);
+}
+}
 
 
 
