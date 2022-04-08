@@ -84,6 +84,12 @@ button {
   opacity: 90%;
 }
 
+#links:active,
+button:active,
+#websiteimage:active {
+  transform: scaleX(0.9) scaleY(0.9);
+}
+
 #links:hover,
 #websiteimage:hover,
 button:hover {
