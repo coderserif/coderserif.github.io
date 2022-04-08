@@ -37,9 +37,45 @@
         comix.setAttribute("href", "comix?comix=" + (comixsetting.max - 1));
       }
     </script>
+    <script>
+      var buttons = {
+        recipe: { visibility: true, display: "Recipies" },
+        generator: { visibility: true, display: "Generators" },
+        game: { visibility: true, display: "Games" },
+        misc: { visibility: true, display: "Misc" },
+        all: { visibility: true, display: "All" }
+      };
+      function hideall() {
+        for (let i = 0; i < Object.keys(buttons).length; i++) {
+          buttons[Object.keys(buttons)[i]].visibility = false;
+          document.getElementById(
+            Object.keys(buttons)[i] + "-button"
+          ).innerHTML = "Show " + buttons[Object.keys(buttons)[i]].display;
+          for (
+            let ci = 0;
+            ci <
+            document.getElementsByClassName(Object.keys(buttons)[i]).length;
+            ci++
+          ) {
+            document.getElementsByClassName(Object.keys(buttons)[i])[
+              ci
+            ].style.display = "none";
+          }
+        }
+      }
+      function button(r) {
+        hideall();
+        for (let i = 0; i < document.getElementsByClassName(r).length; i++) {
+          element = document.getElementsByClassName(r)[i];
+          element.style.display = "";
+          document.getElementById(r + "-button").innerHTML =
+            "Showing " + buttons[r].display;
+        }
+      }
+    </script>
     <title>Home of Serif</title>
   </head>
-  <body>
+  <body onload="hideall()">
     <div>
       <a href="https://coderserif.github.io/" id="title">
         <h1>coderserif</h1>
@@ -109,128 +145,38 @@
     <br />
     <div id="websites" align="center">
       <p>Websites I made</p>
-      <button
-        id="buttonwebl"
-        class="button"
-        onclick="webl()"
-        style="
-          background-color: rgb(139, 0, 0);
-          color: white;
-          border-radius: 6px;
-          width: 130px;
-          height: 30px;
-          cursor: pointer;
-        "
-      >
-        Hide All
-      </button>
-      <button
-        id="buttonrecl"
-        class="button"
-        onclick="recl()"
-        style="
-          background-color: rgb(139, 0, 0);
-          color: white;
-          border-radius: 6px;
-          width: 130px;
-          height: 30px;
-          cursor: pointer;
-        "
-      >
+      <button id="all-button" onclick="button('all')">Showing All</button>
+      <button id="recipe-button" onclick="button('recipe')">
         Show Recipes
       </button>
-      <button
-        id="buttongenl"
-        class="button"
-        onclick="genl()"
-        style="
-          background-color: rgb(139, 0, 0);
-          color: white;
-          border-radius: 6px;
-          width: 130px;
-          height: 30px;
-          cursor: pointer;
-        "
-      >
+      <button id="generator-button" onclick="button('generator')">
         Show Generators
       </button>
-      <button
-        id="buttongaml"
-        class="button"
-        onclick="gaml()"
-        style="
-          background-color: rgb(139, 0, 0);
-          color: white;
-          border-radius: 6px;
-          width: 130px;
-          height: 30px;
-          cursor: pointer;
-        "
-      >
-        Show Games
-      </button>
-      <button
-        id="buttonmisl"
-        class="button"
-        onclick="misl()"
-        style="
-          background-color: rgb(139, 0, 0);
-          color: white;
-          border-radius: 6px;
-          width: 130px;
-          height: 30px;
-          cursor: pointer;
-        "
-      >
-        Show Misc
-      </button>
+      <button id="game-button" onclick="button('game')">Show Games</button>
+      <button id="misc-button" onclick="button('misc')">Show Misc</button>
       <br />
-      <l id="webl" class="l" style="display: block;">
-        <a href="https://coderserif.github.io/comix?comix=0" id="comix">
-          <img src="img/comics.png" id="websiteimage" />
-        </a>
-        <a href="https://coderserif.github.io/omelette">
-          <img src="img/omelette.png" id="websiteimage" />
-        </a>
-        <a href="https://coderserif.github.io/noodles">
-          <img src="img/noodles.png" id="websiteimage" />
-        </a>
-        <a href="https://coderserif.github.io/bigshot">
-          <img src="img/bigshot.png" id="websiteimage" />
-        </a>
-        <a href="https://coderserif.github.io/wariodies">
-          <img src="img/wario.png" id="websiteimage" />
-        </a>
-        <a href="https://coderserif.github.io/redpanda">
-          <img src="img/panda.png" id="websiteimage" />
-        </a>
-      </l>
-      <l id="recl" class="l" style="display: none;">
-        <a href="https://coderserif.github.io/omelette">
-          <img src="img/omelette.png" id="websiteimage" />
-        </a>
-        <a href="https://coderserif.github.io/noodles">
-          <img src="img/noodles.png" id="websiteimage" />
-        </a>
-      </l>
-      <l id="genl" class="l" style="display: none;">
-        <a href="https://coderserif.github.io/wariodies">
-          <img src="img/wario.png" id="websiteimage" />
-        </a>
-      </l>
-      <l id="gaml" class="l" style="display: none;">
-        <a href="https://coderserif.github.io/redpanda">
-          <img src="img/panda.png" id="websiteimage" />
-        </a>
-      </l>
-      <l id="misl" class="l" style="display: none;">
-        <a href="https://coderserif.github.io/comix?comix=0" id="comix">
-          <img src="img/comics.png" id="websiteimage" />
-        </a>
-        <a href="https://coderserif.github.io/bigshot">
-          <img src="img/bigshot.png" id="websiteimage" />
-        </a>
-      </l>
+      <a
+        href="https://coderserif.github.io/comix?comix=0"
+        id="comix"
+        class="all misc"
+      >
+        <img src="img/comics.png" id="websiteimage" />
+      </a>
+      <a href="https://coderserif.github.io/omelette" class="all recipe">
+        <img src="img/omelette.png" id="websiteimage" />
+      </a>
+      <a href="https://coderserif.github.io/noodles" class="all recipe">
+        <img src="img/noodles.png" id="websiteimage" />
+      </a>
+      <a href="https://coderserif.github.io/bigshot" class="all misc">
+        <img src="img/bigshot.png" id="websiteimage" />
+      </a>
+      <a href="https://coderserif.github.io/wariodies" class="all generator">
+        <img src="img/wario.png" id="websiteimage" />
+      </a>
+      <a href="https://coderserif.github.io/redpanda" class="all game">
+        <img src="img/panda.png" id="websiteimage" />
+      </a>
     </div>
     <br />
     <br />

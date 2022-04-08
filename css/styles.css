@@ -59,6 +59,15 @@ html {
   animation-duration: 0.8s;
 }
 
+button {
+  background-color: rgb(139, 0, 0);
+  color: white;
+  border-radius: 6px;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+}
+
 #mesittinf {
   height: 33%;
   width: 33%;
