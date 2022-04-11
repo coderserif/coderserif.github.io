@@ -4,6 +4,11 @@ body {
   margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1,
@@ -14,14 +19,117 @@ p {
 
 a {
   color: white;
-  text-decoration: none; // changed from text-decoration:underline
+  text-decoration: none;
 }
 
+/* When it is unvisited link */
+a:link {
+  color: white;
+}
+
+/* When it is visited link */
+a:visited {
+  color: white;
+}
+
+/* When you hover over link */
 a:hover {
-  text-decoration: underline; // changed from text:decoration:none
+  color: rgb(110, 0, 0);
+}
+
+a:active {
+  color: red;
 }
 
 img {
   height: 51%;
   width: 51%;
+}
+
+div {
+  margin-left: 400px;
+  margin-right: 400px;
+  cursor: pointer;
+}
+
+/* totally didnt steal from colon hahaha please dont ban me */
+
+div:hover {
+  animation: brrr 0.2s;
+  animation-iteration-count: infinite;
+}
+div:active {
+  animation: hyperbrrr 0.1s !important;
+  animation-iteration-count: infinite !important;
+  filter: saturate(500%) blur(1.2px) !important;
+}
+@keyframes brrr {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes hyperbrrr {
+  0% {
+    transform: scale(1.2) translate(4px, 2px) rotate(0deg);
+  }
+  10% {
+    transform: scale(1.2) translate(-4px, -4px) rotate(-3deg);
+  }
+  20% {
+    transform: scale(1.2) translate(-12, 0px) rotate(3deg);
+  }
+  30% {
+    transform: scale(1.2) translate(12, 4px) rotate(0deg);
+  }
+  40% {
+    transform: scale(1.2) translate(4px, -4px) rotate(3deg);
+  }
+  50% {
+    transform: scale(1.2) translate(-4px, 4px) rotate(-3deg);
+  }
+  60% {
+    transform: scale(1.2) translate(-12, 2px) rotate(0deg);
+  }
+  70% {
+    transform: scale(1.2) translate(12, 2px) rotate(-3deg);
+  }
+  80% {
+    transform: scale(1.2) translate(-4px, -4px) rotate(3deg);
+  }
+  90% {
+    transform: scale(1.2) translate(4px, 4px) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.2) translate(4px, -4px) rotate(-3deg);
+  }
 }

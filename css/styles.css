@@ -68,11 +68,6 @@ button {
   cursor: pointer;
 }
 
-#mesittinf {
-  height: 33%;
-  width: 33%;
-}
-
 #links {
   height: 3%;
   width: 3%;
@@ -87,7 +82,7 @@ button {
 #links:active,
 button:active,
 #websiteimage:active {
-  transform: scaleX(0.9) scaleY(0.9);
+  transform: scale(0.9);
 }
 
 #links:hover,
@@ -118,4 +113,15 @@ button:hover {
   100% {
     transform: scale(1);
   }
+}
+
+.sudo {
+  width: 250px;
+  height: 300px;
+  transform: scaleX(-1);
+  background-image: url("/img/mesittinf.png");
+}
+
+.sudo:hover {
+  background-image: url("/img/mesittinf2.png");
 }
