@@ -11,7 +11,7 @@ fetch("/json/comixsettings.json")
     alert(
       "Failed to load comixsettings, Error Message:\n" +
         error +
-        "\n\nTry Reloading..."
+        "\n\nIf you got this error, try refreshing the page ¯l_(ツ)_/¯"
     );
     document.getElementById("comix").innerHTML = "Data Failed To Load :(<br>";
   });
