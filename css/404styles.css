@@ -22,17 +22,6 @@ a {
   text-decoration: none;
 }
 
-/* When it is unvisited link */
-a:link {
-  color: white;
-}
-
-/* When it is visited link */
-a:visited {
-  color: white;
-}
-
-/* When you hover over link */
 a:hover {
   color: rgb(110, 0, 0);
 }

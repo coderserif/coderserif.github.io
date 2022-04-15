@@ -216,3 +216,11 @@ button:hover {
     transform: scale(1.2) translate(4px, -4px) rotate(-3deg);
   }
 }
+
+br {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
