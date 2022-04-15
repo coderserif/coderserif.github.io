@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript Playtest</title>
+    <link
+      rel="shortcut icon"
+      href="https://pluspng.com/img-png/javascript-vector-png-javascript-vector-logo-600.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="css/javastyles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather+Sans:wght@327&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <p id="welcome" align="center"></p>
+    <script src="js/javaplay.js"></script>
+    <br />
+    <div id="javacontent" align="center">
+      <a href="https://coderserif.github.io" align="center"
+        >back to main page</a
+      >
+      <br />
+      <br />
+      <br />
+      <br />
+      <button type="button" onclick="displayDate()">
+        What is the date today?
+      </button>
+      <h1 id="now"></h1>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h1>Javascript Calculator</h1>
+      <form>First number: <input type="text" id="number1" /></form>
+      <br />
+      <form>Second number: <input type="text" id="number2" /></form>
+      <br />
+      <button type="button" onclick="add()">Add</button>
+      <button type="button" onclick="subtract()">Subtract</button>
+      <button type="button" onclick="multiply()">Multiply</button>
+      <button type="button" onclick="divide()">Divide</button>
+      <br />
+      <p>The answer is:</p>
+      <div id="answer"></div>
+    </div>
+    <hr />
+    <p>Login (doesn't do anything. just a form test)</p>
+    <form>
+      Password: <input type="password" id="password1" />
+      <br />
+      <br />
+      Confirm Password: <input type="password" id="password2" />
+      <br />
+      <br />
+      <input type="checkbox" onclick="show()" id="checkbox" />Show Password
+      <br />
+      <br />
+      <button type="button" onclick="verify()">Submit</button>
+    </form>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <figcaption align="center">
+      website hosting by
+      <a href="https://pages.github.com/" target="_blank">Github Pages</a>
+    </figcaption>
+    <figcaption align="center">
+      created with
+      <a href="https://codesandbox.io" target="_blank">CodeSandbox</a>
+    </figcaption>
+  </body>
+</html>

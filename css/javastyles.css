@@ -1,0 +1,74 @@
+body {
+  margin-top: 50px;
+  background-image: url("/img/javaplaybg.png");
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p,
+form,
+button,
+div,
+a,
+figcaption {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+a {
+  color: rgb(255, 115, 0);
+}
+
+a {
+  text-decoration: none; // changed from text-decoration:underline
+}
+
+a:hover {
+  text-decoration: underline; // changed from text:decoration:none
+}
+
+a:active {
+  color: rgb(255, 38, 0);
+}
+
+button:hover,
+#checkbox:hover {
+  transition: all 0.1s ease-out;
+  animation-name: bounceButton;
+  animation-duration: 0.5s;
+}
+
+button:active,
+#checkbox:active {
+  transform: scale(1.1);
+}
+
+button {
+  background-color: rgb(255, 196, 0);
+  color: rgb(61, 61, 61);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input {
+  border-radius: 6px;
+}
+
+@keyframes bounceButton {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.88);
+  }
+  50% {
+    transform: scale(0.93);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
