@@ -55,7 +55,7 @@ a {
 
 @font-face {
     font-family: Pusab;
-    src: url("fonts/gd_font.otf");
+    src: url("/fonts/gd_font.otf");
 }
 
 #gdimg {
