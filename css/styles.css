@@ -114,11 +114,6 @@ button:hover {
   margin-left: 70px;
 }
 
-#gddoor {
-  height: 5%;
-  width: 5%;
-}
-
 @keyframes bounceButton {
   0% {
     transform: scale(1);
