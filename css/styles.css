@@ -14,7 +14,7 @@ a:hover {
 }
 
 body {
-  background-image: url("/img/indexbg.png");
+  background-image: url("img/indexbg.png");
   margin-left: 250px;
   margin-right: 150px;
 }
@@ -141,11 +141,11 @@ button:hover {
   width: 250px;
   height: 300px;
   transform: scaleX(-1);
-  background-image: url("/img/mesittinf.png");
+  background-image: url("img/mesittinf.png");
 }
 
 .sudo:hover {
-  background-image: url("/img/mesittinf2.png");
+  background-image: url("img/mesittinf2.png");
 }
 
 /* definetely did NOT steal from colon :))))) */
