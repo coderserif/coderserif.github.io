@@ -65,7 +65,26 @@ a:hover {
   }
 }
 
+@keyframes drop {
+  0% {
+    left: 0px;
+    top: -700px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+  }
+}
+
 #content {
   background: rgba(161, 0, 0, 0.623);
   border-radius: 40px;
+}
+
+html {
+  position: relative;
+  animation-name: drop;
+  animation-duration: 1s;
 }
