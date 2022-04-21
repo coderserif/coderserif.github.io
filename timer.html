@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/timerstyles.css">
+        <link rel="shortcut icon" href="img-timer/cloc.jpeg" type="image/x-icon"> 
+        <title>
+            Simple Timer
+        </title>
+    </head>
+  <body>
+      <h1 align="center">
+          DEFINETELY TOTALLY A Simple Timer :)
+      </h1>
+      <div align="center">
+        <input id="userInput" type="number" value = "" placeholder="Enter time"/> 
+        <h1 id="timerr">| Enter Time in Seconds |</h1>
+        <a href="#" class="start" onclick="startTime()">Start</a>
+        <a href="#" class="start" onclick="stop()">Stop</a>
+      </div>
+      <a href="https://coderserif.github.io">i hate this timer</a>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+      <h2 align="center">
+          so uhhh this timer only uses seconds so here's a handy tool to convert hours into seconds
+      </h2>
+      <div id="timer" align="center">
+        <input id="userInput1" type="number" value = "" placeholder="Enter number of hours"/>
+        <a href="#" class="start" onclick="convertToSeconds();">Convert!</a>
+        <p>&#10553;</p>
+        <p id="numberOfHours"></p>
+        <br>
+        <br>
+        <h2 align="center">
+            this one converts minutes into seconds
+        </h2>
+        <input id="userInput2" type="number" value = "" placeholder="Enter number of minutes"/>
+        <a href="#" class="start" onclick="convertToSeconds2();">Convert!</a>
+        <p>&#10553;</p>
+        <p id="numberOfMinutes"></p>
+        <br>  
+        <br>
+        <h2 align="center">
+            this tool adds your hours and minutes together
+        </h2>
+        <input id="userInput3" type="number" value = "" placeholder="Enter hours in seconds"/>
+        <p>+</p>
+        <input id="userInput4" type="number" value = "" placeholder="Enter minutes in seconds"/>
+        <a href="#" class="start" onclick="add();">Add!</a>
+        <p>&#10553;</p>
+        <p id="totalSeconds"></p>
+      </div>
+      <script src="js/timer.js"></script>
+  </body>
+</html>
