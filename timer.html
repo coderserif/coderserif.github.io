@@ -6,64 +6,16 @@
         <title>
             Simple Timer
         </title>
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://coderserif.github.io/" />
-        <meta
-          name="keywords"
-          content="sirf,coderserif,github,serifshome,serif,wariodies,online,coderserifgithub"
-        />
-        <meta property="og:title" content="Online Timer" />
-        <meta
-          property="og:description"
-          content="sooper cool timer totally nothing wrong UI is very simple TOTALLy accesiblee to da disabled community :)"
-        />
-        <meta property="og:image" content="/img-timer/cloc.jpeg" />
     </head>
   <body>
-      <h1 align="center">
-          DEFINETELY TOTALLY A Simple Timer :)
-      </h1>
-      <div align="center">
-        <input id="userInput" type="number" value = "" placeholder="Enter time"/> 
-        <h1 id="timerr">| Enter Time in Seconds |</h1>
-        <a href="#" class="start" onclick="startTime()">Start</a>
-        <a href="#" class="start" onclick="stop()">Stop</a>
-      </div>
-      <a href="https://coderserif.github.io">i hate this timer</a>
-      <br>
-      <br>
-      <hr>
-      <br>
-      <br>
-      <h2 align="center">
-          so uhhh this timer only uses seconds so here's a handy tool to convert hours into seconds
-      </h2>
-      <div id="timer" align="center">
-        <input id="userInput1" type="number" value = "" placeholder="Enter number of hours"/>
-        <a href="#" class="start" onclick="convertToSeconds();">Convert!</a>
-        <p>&#10553;</p>
-        <p id="numberOfHours"></p>
-        <br>
-        <br>
-        <h2 align="center">
-            this one converts minutes into seconds
-        </h2>
-        <input id="userInput2" type="number" value = "" placeholder="Enter number of minutes"/>
-        <a href="#" class="start" onclick="convertToSeconds2();">Convert!</a>
-        <p>&#10553;</p>
-        <p id="numberOfMinutes"></p>
-        <br>  
-        <br>
-        <h2 align="center">
-            this tool adds your hours and minutes together
-        </h2>
-        <input id="userInput3" type="number" value = "" placeholder="Enter hours in seconds"/>
-        <p>+</p>
-        <input id="userInput4" type="number" value = "" placeholder="Enter minutes in seconds"/>
-        <a href="#" class="start" onclick="add();">Add!</a>
-        <p>&#10553;</p>
-        <p id="totalSeconds"></p>
-      </div>
+    <h1>AWESOME AND EPIC TIMER</h1>
+    <a href="https://coderserif.github.io">i hate this timer</a>
+    <div id="container">
+        <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Seconds</p>
+        <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
+        <button id="start" class="btn">Start</button>
+        <button id="reset" class="btn">Reset</button>
+    </div>
       <script src="js/timer.js"></script>
   </body>
 </html>
