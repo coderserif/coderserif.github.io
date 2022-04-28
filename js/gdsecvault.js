@@ -42,13 +42,12 @@ var randomDialogueDoor = [
 ]
 
 var randomDialogueChall = [
-  "You need 200 diamonds to play",
-  "Ya need diamonds bro",
-  "I don't know where to get diamonds, don't ask me!",
-  "You're just gonna keep clicking?",
-  "This level was cool but you can't play it.",
-  "Sorry, you need diamonds.",
-  "You can't just waltz in."
+  "Here's the ID: 27470817",
+  "The ID is: 27470817",
+  "Hope you like it! 27470817",
+  "It's really good trust me: 27470817",
+  "I made it myself! 27470817",
+  "RubRub never gave me creator points... 27470817"
 ]
 
 function loadChall() {
