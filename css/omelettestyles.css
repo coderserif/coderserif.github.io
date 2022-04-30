@@ -1,5 +1,6 @@
 body {
   background-image: url(/img/omelettebg.png);
+  cursor: none;
 }
 
 p {
@@ -48,6 +49,7 @@ body {
 a {
   font-family: "Monaco", monospace, sans-serif;
   color: rgb(228, 46, 0);
+  cursor: none;
 }
 
 a {
@@ -81,4 +83,5 @@ html {
   position: relative;
   animation-name: drop;
   animation-duration: 1s;
+  cursor: none;
 }

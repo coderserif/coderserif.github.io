@@ -9,6 +9,7 @@ body {
   font-size: 22px;
   margin-left: 10%;
   margin-right: 20%;
+  cursor: none;
 }
 
 h1,
@@ -20,6 +21,7 @@ h4,
 li,
 a {
   color: white;
+  cursor: none;
 }
 
 a {
@@ -32,11 +34,11 @@ a:hover {
 }
 
 a {
-  cursor: pointer;
+  cursor: none;
 }
 
 .winner {
-  cursor: help;
+  cursor: none;
 }
 
 img {

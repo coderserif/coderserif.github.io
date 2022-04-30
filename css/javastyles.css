@@ -32,12 +32,6 @@ a:active {
   color: rgb(255, 38, 0);
 }
 
-button:hover,
-#checkbox:hover {
-  transition: all 0.1s ease-out;
-  animation-name: bounceButton;
-  animation-duration: 0.5s;
-}
 
 button:active,
 #checkbox:active {
@@ -48,30 +42,14 @@ button {
   background-color: rgb(255, 196, 0);
   color: rgb(61, 61, 61);
   border-radius: 6px;
-  cursor: pointer;
+  cursor: none;
 }
 
 input {
   border-radius: 6px;
 }
 
-@keyframes bounceButton {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(0.88);
-  }
-  50% {
-    transform: scale(0.93);
-  }
-  75% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+
 
 @keyframes drop {
   0% {

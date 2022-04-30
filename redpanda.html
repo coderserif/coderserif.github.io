@@ -30,8 +30,10 @@
       /* When you mouse over link */
       a:hover {
         color: rgb(0, 39, 10);
+        cursor: none;
       }
     </style>
+    <script src="js/cursor.js"></script>
   </head>
   <body>
     <h1>Where Are The Red Pandas?</h1>
@@ -41,22 +43,23 @@
     </h3>
     <figcaption>by coderserif</figcaption>
     <figcaption>
-      website hosting by <a href="https://pages.github.com/">Github Pages</a>
+      website hosting by <a href="https://pages.github.com/" data-cursor="fill">Github Pages</a>
     </figcaption>
     <figcaption>
-      created with <a href="https://codesandbox.io">CodeSandbox</a>
+      created with <a href="https://codesandbox.io" data-cursor="fill">CodeSandbox</a>
     </figcaption>
     <hr />
     <div id="game">
-      <div id="bamboo1"></div>
-      <div id="bamboo2"></div>
-      <div id="bamboo3"></div>
-      <div id="bamboo4"></div>
-      <div id="bamboo5"></div>
-      <div id="bamboo6"></div>
-      <div id="bamboo7"></div>
-      <div id="bamboo8"></div>
+      <div id="bamboo1" data-cursor="fill"></div>
+      <div id="bamboo2" data-cursor="fill"></div>
+      <div id="bamboo3" data-cursor="fill"></div>
+      <div id="bamboo4" data-cursor="fill"></div>
+      <div id="bamboo5" data-cursor="fill"></div>
+      <div id="bamboo6" data-cursor="fill"></div>
+      <div id="bamboo7" data-cursor="fill"></div>
+      <div id="bamboo8" data-cursor="fill"></div>
     </div>
     <script src="js/panda.js"></script>
+    <div id="cursor" style></div>
   </body>
 </html>

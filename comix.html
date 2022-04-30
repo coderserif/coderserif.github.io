@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head id="head">
-    <script src="/js/comixload.js"></script>
     <link rel="stylesheet" type="text/css" href="css/comixstyles.css" />
     <link rel="shortcut icon" href="/img/neutral.png" type="image/x-icon" />
     <meta property="og:type" content="website" />
@@ -16,24 +15,12 @@
       content="Serif's epic comix and stuff. It's funny I think."
     />
     <meta property="og:image" content="/img/neutral.png" />
-    <script>
-        function copyToClipboard(text) {
-        var inputc = document.body.appendChild(document.createElement("input"));
-        inputc.value = window.location.href;
-        inputc.focus();
-        inputc.select();
-        document.execCommand('copy');
-        inputc.parentNode.removeChild(inputc);
-        alert("Link copied.");
-        }
-    </script>
     <title>Serif's Comix</title>
+    <script src="js/comixload.js"></script>
   </head>
   <body id="body">
     <h1>Serif's Comix</h1>
     <a href=https://coderserif.github.io>back to main page</a>
-    <br />
-    <a onclick="copyToClipboard()">copy link</a>
     <hr />
     <figcaption>
       website hosting by <a href="https://pages.github.com/">Github Pages</a>
@@ -84,4 +71,3 @@
     </div>
   </body>
 </html>
- 

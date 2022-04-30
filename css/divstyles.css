@@ -3,6 +3,7 @@ body {
   margin-left: 500px;
   margin-right: 300px;
   margin-top: 100px;
+  cursor: none;
 }
 
 @font-face {
@@ -17,7 +18,10 @@ h3,
 figcaption {
   font-family: "COMICSANSSS";
   color: forestgreen;
+  cursor: none;
 }
+
+
 
 a {
   text-decoration: none; // changed from text-decoration:underline
@@ -37,6 +41,7 @@ a:hover {
   float: left;
   background-image: url(/img-redpanda/bambooc.png);
   background-size: 100%;
+  cursor: none;
 }
 
 #bamboo2 {
@@ -98,47 +103,47 @@ a:hover {
 #bamboo1:hover {
   background-image: url(/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  cursor: none;
 }
 
 #bamboo2:hover {
   background-image: url(/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  cursor: none;
 }
 
 #bamboo3:hover {
   background-image: url(/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  cursor: none;
 }
 
 #bamboo4:hover {
   background-image: url(/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  cursor: none;
 }
 #bamboo5:hover {
   background-image: url(/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  cursor: none;
 }
 
 #bamboo6:hover {
   background-image: url(/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  cursor: none;
 }
 #bamboo7:hover {
   background-image: url(/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  cursor: none;
 }
 
 #bamboo8:hover {
   background-image: url(/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  cursor: none;
 }
 
 #bamboo1:active {
