@@ -8,7 +8,7 @@ body {
 }
 
 button {
-    cursor: none;
+    cursor: pointer;
 }
 
 a {
@@ -109,11 +109,11 @@ h1 {
 }
 
 .btn:hover {
-  cursor: none;
+  cursor: grab;
 }
 
 .btn:active {
-  cursor: none;
+  cursor: grabbing;
 }
 
 #start {
@@ -178,6 +178,3 @@ h1 {
   text-decoration: none;
 }
 
-input {
-  cursor: none;
-}
