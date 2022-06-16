@@ -7,7 +7,7 @@ body {
 
 @font-face {
   font-family: COMICSANSSS;
-  src: url("/fonts/COMICSANSSS.ttf");
+  src: url("/games/COMICSANSSS.ttf");
 }
 
 h1,
@@ -40,7 +40,7 @@ a:hover {
   width: 140px;
   height: 130px;
   float: left;
-  background-image: url(/img-redpanda/bambooc.png);
+  background-image: url(/games/games-img/img-redpanda/bambooc.png);
   background-size: 100%;
   cursor: pointer;
 }
@@ -49,7 +49,7 @@ a:hover {
   width: 140px;
   height: 130px;
   float: left;
-  background-image: url(/img-redpanda/bambooc.png);
+  background-image: url(/games/games-img/img-redpanda/bambooc.png);
   background-size: 100%;
 }
 
@@ -57,7 +57,7 @@ a:hover {
   width: 140px;
   height: 130px;
   float: left;
-  background-image: url(/img-redpanda/bambooc.png);
+  background-image: url(/games/games-img/img-redpanda/bambooc.png);
   background-size: 100%;
 }
 
@@ -65,7 +65,7 @@ a:hover {
   width: 140px;
   height: 130px;
   float: left;
-  background-image: url(/img-redpanda/bambooc.png);
+  background-image: url(/games/games-img/img-redpanda/bambooc.png);
   background-size: 100%;
 }
 
@@ -73,7 +73,7 @@ a:hover {
   width: 140px;
   height: 130px;
   float: left;
-  background-image: url(/img-redpanda/bambooc.png);
+  background-image: url(/games/games-img/img-redpanda/bambooc.png);
   background-size: 100%;
 }
 
@@ -81,7 +81,7 @@ a:hover {
   width: 140px;
   height: 130px;
   float: left;
-  background-image: url(/img-redpanda/bambooc.png);
+  background-image: url(/games/games-img/img-redpanda/bambooc.png);
   background-size: 100%;
 }
 
@@ -89,7 +89,7 @@ a:hover {
   width: 140px;
   height: 130px;
   float: left;
-  background-image: url(/img-redpanda/bambooc.png);
+  background-image: url(/games/games-img/img-redpanda/bambooc.png);
   background-size: 100%;
 }
 
@@ -97,85 +97,85 @@ a:hover {
   width: 140px;
   height: 130px;
   float: left;
-  background-image: url(/img-redpanda/bambooc.png);
+  background-image: url(/games/games-img/img-redpanda/bambooc.png);
   background-size: 100%;
 }
 
 #bamboo1:hover {
-  background-image: url(/img-redpanda/questionMark.png);
+  background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
 }
 
 #bamboo2:hover {
-  background-image: url(/img-redpanda/questionMark.png);
+  background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
   cursor: pointer;
 }
 
 #bamboo3:hover {
-  background-image: url(/img-redpanda/questionMark.png);
+  background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
   cursor: pointer;
 }
 
 #bamboo4:hover {
-  background-image: url(/img-redpanda/questionMark.png);
+  background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
   cursor: pointer;
 }
 #bamboo5:hover {
-  background-image: url(/img-redpanda/questionMark.png);
+  background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
   cursor: pointer;
 }
 
 #bamboo6:hover {
-  background-image: url(/img-redpanda/questionMark.png);
+  background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
   cursor: pointer;
 }
 #bamboo7:hover {
-  background-image: url(/img-redpanda/questionMark.png);
+  background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
   cursor: pointer;
 }
 
 #bamboo8:hover {
-  background-image: url(/img-redpanda/questionMark.png);
+  background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
   cursor: pointer;
 }
 
 #bamboo1:active {
-  background-image: url(/img-redpanda/snowLeopard1.jpg);
+  background-image: url(/games/games-img/img-redpanda/snowLeopard1.jpg);
 }
 
 #bamboo2:active {
-  background-image: url(/img-redpanda/snowLeopard2.jpg);
+  background-image: url(/games/games-img/img-redpanda/snowLeopard2.jpg);
 }
 
 #bamboo3:active {
-  background-image: url(/img-redpanda/redPanda1.jpg);
+  background-image: url(/games/games-img/img-redpanda/redPanda1.jpg);
 }
 
 #bamboo4:active {
-  background-image: url(/img-redpanda/snowLeopard3.jpg);
+  background-image: url(/games/games-img/img-redpanda/snowLeopard3.jpg);
 }
 
 #bamboo5:active {
-  background-image: url(/img-redpanda/redPanda3.jpg);
+  background-image: url(/games/games-img/img-redpanda/redPanda3.jpg);
 }
 
 #bamboo6:active {
-  background-image: url(/img-redpanda/redPanda5.jpg);
+  background-image: url(/games/games-img/img-redpanda/redPanda5.jpg);
 }
 
 #bamboo7:active {
-  background-image: url(/img-redpanda/snowLeopard3.jpg);
+  background-image: url(/games/games-img/img-redpanda/snowLeopard3.jpg);
 }
 
 #bamboo8:active {
-  background-image: url(/img-redpanda/snowLeopard1.jpg);
+  background-image: url(/games/games-img/img-redpanda/snowLeopard1.jpg);
 }
 
 @keyframes drop {

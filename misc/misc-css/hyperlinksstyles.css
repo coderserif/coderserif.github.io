@@ -1,12 +1,12 @@
 body {
-  background-image: url("/img/videogamesbg.png");
+  background-image: url("/misc/misc-img/videogamesbg.png");
   font-family: "COMICSANSSS";
   margin-left: 40px;
 }
 
 @font-face {
   font-family: COMICSANSSS;
-  src: url("/fonts/COMICSANSSS.ttf");
+  src: url("/games/COMICSANSSS.ttf");
 }
 
 a {
