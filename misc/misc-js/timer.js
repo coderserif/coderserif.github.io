@@ -31,7 +31,7 @@ function timer(){
         h.value = 0;
         m.value = 0;
         s.value = 0;
-        var audio = new Audio('audio/wakeup.mp3');
+        var audio = new Audio('misc-audio/wakeup.mp3');
         audio.play();
     } else if(s.value != 0){
         s.value--;

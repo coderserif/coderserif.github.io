@@ -7,7 +7,7 @@
       href="https://pluspng.com/img-png/javascript-vector-png-javascript-vector-logo-600.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" type="text/css" href="css/javastyles.css" />
+    <link rel="stylesheet" type="text/css" href="misc-css/javastyles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,20 +17,18 @@
   </head>
   <body>
     <p id="welcome" align="center"></p>
-    <script src="js/javaplay.js"></script>
-    <script src="js/cursor.js"></script>
+    <script src="misc-js/javaplay.js"></script>
     <br />
     <div id="javacontent" align="center">
       <a href="https://coderserif.github.io"
       align="center"
-      data-cursor="fill"
       >back to main page
       </a>
       <br />
       <br />
       <br />
       <br />
-      <button type="button" onclick="displayDate()" data-cursor="fill">
+      <button type="button" onclick="displayDate()" >
         What is the date today?
       </button>
       <h1 id="now"></h1>
@@ -44,10 +42,10 @@
       <br />
       <form>Second number: <input type="text" id="number2" /></form>
       <br />
-      <button type="button" onclick="add()" data-cursor="fill">Add</button>
-      <button type="button" onclick="subtract()" data-cursor="fill">Subtract</button>
-      <button type="button" onclick="multiply()" data-cursor="fill">Multiply</button>
-      <button type="button" onclick="divide()" data-cursor="fill">Divide</button>
+      <button type="button" onclick="add()" >Add</button>
+      <button type="button" onclick="subtract()" >Subtract</button>
+      <button type="button" onclick="multiply()" >Multiply</button>
+      <button type="button" onclick="divide()" >Divide</button>
       <br />
       <p>The answer is:</p>
       <div id="answer"></div>
@@ -61,10 +59,10 @@
       Confirm Password: <input type="password" id="password2" />
       <br />
       <br />
-      <input type="checkbox" onclick="show()" id="checkbox" data-cursor="fill"/>Show Password
+      <input type="checkbox" onclick="show()" id="checkbox" />Show Password
       <br />
       <br />
-      <button type="button" onclick="verify()" data-cursor="fill">Submit</button>
+      <button type="button" onclick="verify()" >Submit</button>
     </form>
     <br />
     <br />
@@ -73,8 +71,7 @@
     <br />
     <figcaption align="center">
       website hosting by
-      <a href="https://pages.github.com/" target="_blank" data-cursor="fill">Github Pages</a>
+      <a href="https://pages.github.com/" target="_blank" >Github Pages</a>
     </figcaption>
-    <div id="cursor" style></div>
   </body>
 </html>
