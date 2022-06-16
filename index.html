@@ -17,7 +17,7 @@
     <meta property="og:image" content="/img/neutral.png" />
     <script src="js/index.js"></script>
     <script>
-      fetch("/json/comixsettings.json")
+      fetch("/misc/misc-json/comix-json/comixsettings.json")
         .then((response) => response.json())
         .then((json) => {
           comixsetting = json;
@@ -34,7 +34,7 @@
         });
       function load(comixsetting) {
         var comix = document.getElementById("comix");
-        comix.setAttribute("href", "comix?comix=" + (comixsetting.max - 1));
+        comix.setAttribute("href", "/misc/comix?comix=" + (comixsetting.max - 1));
       }
     </script>
     <script>
@@ -83,16 +83,16 @@
     </div>
     <div align="right">
       <a href="https://youtube.com/serifanimates" target="_blank">
-        <img src="img-links/youtube.png" id="links" />
+        <img src="img/img-links/youtube.png" id="links" />
       </a>
       <a href="https://scratch.mit.edu/users/wizardboy217" target="_blank">
-        <img src="img-links/scratch.png" id="links" />
+        <img src="img/img-links/scratch.png" id="links" />
       </a>
       <a href="https://coderserif.itch.io/" target="_blank">
-        <img src="img-links/itch.png" id="links" />
+        <img src="img/img-links/itch.png" id="links" />
       </a>
       <a href="https://github.com/coderserif" target="_blank">
-        <img src="img-links/github.png" id="links" />
+        <img src="img/img-links/github.png" id="links" />
       </a>
     </div>
     <div align="left" id="welcometext">
@@ -165,35 +165,35 @@
       <button id="misc-button" onclick="button('misc')" >Show Misc</button>
       <br />
       <a
-        href="https://coderserif.github.io/comix?comix=0"
+        href="/misc/comix?comix=0"
         id="comix"
         class="all misc"
       >
-        <img src="img-websites/comics.png" id="websiteimage"  />
+        <img src="img/img-websites/comics.png" id="websiteimage"  />
       </a>
       <a href="recipes/omelette" class="all recipe">
-        <img src="img-websites/omelette.png" id="websiteimage" />
+        <img src="img/img-websites/omelette.png" id="websiteimage" />
       </a>
       <a href="recipes/noodles" class="all recipe">
-        <img src="img-websites/noodles.png" id="websiteimage" />
+        <img src="img/img-websites/noodles.png" id="websiteimage" />
       </a>
-      <a href="bigshot" class="all misc">
-        <img src="img-websites/bigshot.png" id="websiteimage" />
+      <a href="misc/bigshot" class="all misc">
+        <img src="img/img-websites/bigshot.png" id="websiteimage" />
       </a>
-      <a href="wariodies" class="all generator">
-        <img src="img-websites/wario.png" id="websiteimage" />
+      <a href="generators/wariodies" class="all generator">
+        <img src="img/img-websites/wario.png" id="websiteimage" />
       </a>
-      <a href="redpanda" class="all game">
-        <img src="img-websites/panda.png" id="websiteimage"  />
+      <a href="games/redpanda" class="all game">
+        <img src="img/img-websites/panda.png" id="websiteimage"  />
       </a>
-      <a href="myfavgames" class="all misc">
-        <img src="img-websites/favegames.png" id="websiteimageshake" />
+      <a href="misc/myfavgames" class="all misc">
+        <img src="img/img-websites/favegames.png" id="websiteimageshake" />
       </a>
-      <a href="javaplay" class="all misc">
-        <img src="img-websites/javaplay.png" id="websiteimage" />
+      <a href="misc/javaplay" class="all misc">
+        <img src="img/img-websites/javaplay.png" id="websiteimage" />
       </a>
-      <a href="timer" class="all misc">
-        <img src="img-websites/timer.png" id="websiteimage" />
+      <a href="misc/timer" class="all misc">
+        <img src="img/img-websites/timer.png" id="websiteimage" />
       </a>
     </div>
     <br />
@@ -217,7 +217,7 @@
     <br />
     <div class="sudo"></div>
     <a href="gdsecretvault">
-      <img src="img-secvault/gd_door.png" id="links" align="right" >
+      <img src="games/games-img/img-secvault/gd_door.png" id="links" align="right" >
     </a>
   </body>
 </html>

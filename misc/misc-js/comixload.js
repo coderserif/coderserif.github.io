@@ -1,7 +1,7 @@
 var comix = {};
 var comixsetting = {};
 
-fetch("/json/comixsettings.json")
+fetch("/misc/misc-json/comix-json/comixsettings.json")
   .then((response) => response.json())
   .then((json) => {
     comixsetting = json;
