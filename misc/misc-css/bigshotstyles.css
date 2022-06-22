@@ -22,6 +22,10 @@ a {
   color: white;
 }
 
+html, * {
+  cursor: none;
+}
+
 a {
   color: white;
   text-decoration: none; // changed from text-decoration:underline
@@ -31,15 +35,12 @@ a:hover {
   text-decoration: underline; // changed from text:decoration:none
 }
 
-a {
-  cursor: pointer;
-}
 
 .winner {
   cursor: help;
 }
 
-img {
+#figures {
   height: 20%;
   width: 20%;
 }

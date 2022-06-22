@@ -8,11 +8,19 @@
         </title>
     </head>
   <body>
+    <script src="/main/js/index.umd.js" type="module"></script>
+		<script type="module">var cursor = new osuCursor();</script>
     <h1>AWESOME AND EPIC TIMER</h1>
     <a href="https://coderserif.github.io">i hate this timer</a>
     <div id="container">
-        <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Seconds</p>
-        <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
+        <p id="hour-label" class="label">Hours</p>
+        <p id="min-label" class="label">Minutes</p>
+        <p id="sec-label" class="label">Seconds</p>
+        <input id="hour" type="number" max="99" min="0" value="0" class="time">
+        <p id="p1" class="semicolon">:</p>
+        <input id="minute" type="number" max="60" min="0" value="0" class="time">
+        <p id="p2" class="semicolon">:</p>
+        <input id="sec" type="number" max="60" min="0" value="0" class="time">
         <button id="start" class="btn">Start</button>
         <button id="reset" class="btn">Reset</button>
     </div>

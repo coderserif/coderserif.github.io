@@ -1,5 +1,5 @@
 body {
-  background-image: url(/img/omelettebg.png);
+  background-image: url(/main/img/omelettebg.png);
 }
 
 p {
@@ -32,7 +32,7 @@ ol {
   color: rgb(61, 39, 4);
 }
 
-img {
+#pic {
   height: 40%;
   width: 40%;
   border-style: double;
@@ -48,7 +48,10 @@ body {
 a {
   font-family: "Monaco", monospace, sans-serif;
   color: rgb(228, 46, 0);
-  cursor: pointer;
+}
+
+html, * {
+  cursor: none;
 }
 
 a {
