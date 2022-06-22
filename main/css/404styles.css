@@ -45,6 +45,7 @@ html, * {
 div:hover {
   animation: brrr 0.2s;
   animation-iteration-count: infinite;
+  cursor: pointer;
 }
 div:active {
   animation: hyperbrrr 0.1s !important;

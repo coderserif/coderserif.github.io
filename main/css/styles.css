@@ -48,6 +48,10 @@ button {
   color: white;
 }
 
+button, a, .sudo, #websiteimage, #websiteimageshake {
+  cursor: pointer;
+}
+
 @keyframes drop {
   0% {
     left: 0px;

@@ -10,6 +10,10 @@ body {
   src: url("/games/COMICSANSSS.ttf");
 }
 
+button, a {
+  cursor: pointer;
+}
+
 h1,
 p,
 a,

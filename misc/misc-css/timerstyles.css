@@ -16,6 +16,10 @@ a {
     color: black;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 a:active {
     color: white;
 }

@@ -50,6 +50,10 @@ a {
   color: rgb(228, 46, 0);
 }
 
+button, a {
+  cursor: pointer;
+}
+
 html, * {
   cursor: none;
 }

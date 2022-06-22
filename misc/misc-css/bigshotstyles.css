@@ -26,6 +26,10 @@ html, * {
   cursor: none;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 a {
   color: white;
   text-decoration: none; // changed from text-decoration:underline

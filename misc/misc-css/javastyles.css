@@ -68,6 +68,10 @@ button {
   border-radius: 6px;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 input {
   border-radius: 6px;
 }

@@ -13,6 +13,10 @@ html, * {
     cursor: none;
 }
 
+button, a {
+    cursor: pointer;
+}
+
 h1 {
     font-size: 65px;
     background: -webkit-linear-gradient(rgb(255, 170, 0), rgb(255, 213, 0));
