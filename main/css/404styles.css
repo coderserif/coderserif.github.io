@@ -30,14 +30,14 @@ a:active {
   color: red;
 }
 
-img {
-  height: 51%;
-  width: 51%;
-}
 
-div {
+body {
   margin-left: 450px;
   margin-right: 450px;
+}
+
+html, * {
+  cursor: none;
 }
 
 /* totally didnt steal from colon hahaha please dont ban me */

@@ -7,8 +7,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button {
-    cursor: pointer;
+html, *, input, div {
+  cursor: none;
 }
 
 a {
@@ -108,13 +108,6 @@ h1 {
   justify-self: center;
 }
 
-.btn:hover {
-  cursor: grab;
-}
-
-.btn:active {
-  cursor: grabbing;
-}
 
 #start {
   grid-area: 3 / 2 / 3 / 4;

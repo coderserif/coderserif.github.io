@@ -19,10 +19,9 @@ figcaption {
   color: forestgreen;
 }
 
-a {
-  cursor: pointer;
+html, * {
+  cursor: none;
 }
-
 
 a {
   text-decoration: none; // changed from text-decoration:underline
@@ -42,7 +41,7 @@ a:hover {
   float: left;
   background-image: url(/games/games-img/img-redpanda/bambooc.png);
   background-size: 100%;
-  cursor: pointer;
+  
 }
 
 #bamboo2 {
@@ -109,41 +108,41 @@ a:hover {
 #bamboo2:hover {
   background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  
 }
 
 #bamboo3:hover {
   background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  
 }
 
 #bamboo4:hover {
   background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  
 }
 #bamboo5:hover {
   background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  
 }
 
 #bamboo6:hover {
   background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  
 }
 #bamboo7:hover {
   background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  
 }
 
 #bamboo8:hover {
   background-image: url(/games/games-img/img-redpanda/questionMark.png);
   background-size: 140px 130px;
-  cursor: pointer;
+  
 }
 
 #bamboo1:active {

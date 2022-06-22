@@ -15,7 +15,11 @@ a {
   font-size: 30px;
 }
 
-img {
+html, * {
+  cursor: none;
+}
+
+#kids {
   height: 40%;
   width: 40%;
 }

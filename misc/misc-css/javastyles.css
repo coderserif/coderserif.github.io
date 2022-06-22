@@ -66,14 +66,15 @@ button {
   background-color: rgb(255, 196, 0);
   color: rgb(61, 61, 61);
   border-radius: 6px;
-  cursor: pointer;
 }
 
 input {
   border-radius: 6px;
 }
 
-
+html, * {
+  cursor: none;
+}
 
 @keyframes drop {
   0% {
