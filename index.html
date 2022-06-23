@@ -75,9 +75,25 @@
     </script>
     <title>Home of Serif</title>
   </head>
-  <body>
+  <body onload="addEvent()">
     <script src="/main/js/index.umd.js" type="module"></script>
 		<script type="module">var cursor = new osuCursor();</script>
+    <script>
+      var should_play=true
+      window.onclick = () => {
+          if (should_play){
+              should_play=!should_play
+              let soundSource = "/main/hit.mp3";
+              let sound = new Audio(soundSource);
+              sound.play();
+              sound.onended = () => {
+                  should_play=true
+              }
+          }
+  
+      }
+  
+  </script>
     <div>
       <a href="https://coderserif.github.io/" id="title">
         <h1>coderserif</h1>
