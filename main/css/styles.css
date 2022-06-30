@@ -15,6 +15,7 @@ a:hover {
 
 body {
   background: url(/main/img/indexbg.png) fixed;
+  background-color: rgb(65, 30, 30);
   margin-left: 250px;
   margin-right: 150px;
 }
