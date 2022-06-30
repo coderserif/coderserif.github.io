@@ -1,6 +1,6 @@
 body {
   margin-top: 50px;
-  background-image: url("/misc/misc-img/javaplaybg.png");
+  background: url("/misc/misc-img/javaplaybg.png") fixed;
 }
 
 h1 {

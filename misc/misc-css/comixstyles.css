@@ -21,7 +21,7 @@ html, * {
 }
 
 body {
-  background-image: url(/misc/misc-img/comixbg.png);
+  background: url(/misc/misc-img/comixbg.png) fixed;
   margin-left: 250px;
   margin-right: 250px;
 }

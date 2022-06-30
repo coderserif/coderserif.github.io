@@ -1,5 +1,5 @@
 body {
-  background-image: url("/misc/misc-img/videogamesbg.png");
+  background: url("/misc/misc-img/videogamesbg.png") fixed;
   font-family: "COMICSANSSS";
   margin-left: 40px;
 }

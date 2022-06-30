@@ -11,7 +11,7 @@ html, *, input, div {
   cursor: none;
 }
 
-a {
+a, figcaption {
     text-decoration: none;
     color: black;
 }

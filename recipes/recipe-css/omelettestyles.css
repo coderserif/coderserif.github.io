@@ -1,5 +1,8 @@
 body {
-  background-image: url(/main/img/omelettebg.png);
+  background: url(/main/img/omelettebg.png) fixed;
+  background-color: rgb(255, 249, 231);
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 p {
@@ -39,11 +42,6 @@ ol {
   border-width: 5px;
 }
 
-body {
-  background-color: rgb(255, 249, 231);
-  margin-left: 250px;
-  margin-right: 250px;
-}
 
 a {
   font-family: "Monaco", monospace, sans-serif;

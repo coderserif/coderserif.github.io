@@ -14,7 +14,7 @@ a:hover {
 }
 
 body {
-  background-image: url(/main/img/indexbg.png);
+  background: url(/main/img/indexbg.png) fixed;
   margin-left: 250px;
   margin-right: 150px;
 }
