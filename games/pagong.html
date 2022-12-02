@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    body {
+      font-family: sans-serif;
+      
+    }
+
+    #eight-ball {
+      text-align: center;
+      position: relative;
+    }
+
+    #question {
+      text-align: center;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      width: 400px;
+      font-size:22px;
+    }
+
+    #eight, #answer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  </style>
+    <script type="text/javascript">
+    // we define answers
+    var answers = ["oo", 
+                   "oo naman", 
+                   "yes", 
+                   "hindi- joke lang oo",
+                   "di ko alam", 
+                   "tanungin mo ulit sakin", 
+                   "hindi",
+                   "ano?? hindi", 
+                   "no",
+                   "ahahahaha.... hindi", 
+                   "di ko alam ano ang tanong mo?", 
+                   "ulit ulit", 
+                   "mamaya na lang, di ko alam",
+                   "mamaya na", 
+                   "i don't know"];
+    
+    window.onload = function() {
+       var eight = document.getElementById("eight");
+       var answer = document.getElementById("answer");
+       var eightball = document.getElementById("eight-ball");
+       var question = document.getElementById("question");
+       
+       eightball.addEventListener("click", function() {
+         if (question.value.length < 1) {
+          eight.innerText = "";
+          answer.innerText = "uy anong tanong mo??";
+         } else {
+           eight.innerText = "";
+           var num = Math.floor(Math.random() * Math.floor(answers.length));
+           answer.innerText = answers[num];
+         }
+       });
+    };
+  </script>
+  <script src="/main/js/index.umd.js" type="module"></script>
+  <script type="module">var cursor = new osuCursor();</script>
+  <script>
+    var should_play=true
+    window.onclick = () => {
+        if (should_play){
+            should_play=!should_play
+            let soundSource = "/main/hit.mp3";
+            let sound = new Audio(soundSource);
+            sound.play();
+            sound.onended = () => {
+                should_play=true
+            }
+        }
+
+    }
+
+  </script>
+  <title>Tanong mo sa Pagong | Ask the Turtle</title>
+</head>
+  <body>
+    <h1 align="center">Tanong mo sa Pagong (Ask the Turtle)</h1>
+    <h3 align="center">ikuwento mo sa pagong</h3>
+    <br>
+    <input type="text" id="question" />
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="eight-ball">
+      <img src="games-img/img-pagong/pagong.png" alt="Snow" style="width:25%;">
+      <div id="eight">anong tanong mo</div>
+      <div id="answer"></div>
+    </div>
+    <a href="https://coderserif.github.io"
+      align="center"
+      >back to main page
+      </a>
+    <figcaption>by coderserif</figcaption>
+    <figcaption>turtle image by google idk</figcaption>
+    <figcaption>
+      website hosting by <a href="https://pages.github.com/" >Github Pages</a>
+    </figcaption>
+    <div id="cursor" style></div>
+  </body>
+</html>
