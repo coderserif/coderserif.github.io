@@ -4,15 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/games/games-img/img-pagong/turt.png" type="image/x-icon" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://coderserif.github.io/" />
-  <meta property="og:title" content="Tanong mo sa Pagong" />
-  <meta
-    property="og:description"
-    content="ask the turtle"
-  />
-  <meta property="og:image" content="/games/games-img/img-pagong/turt.png" />
   <style>
 
     body {
@@ -47,21 +38,19 @@
   <script src="/main/js/index.umd.js" type="module"></script>
   <script type="module">var cursor = new osuCursor();</script>
   <script type="text/javascript">
-    var answers = ["oo", 
-                   "oo naman", 
-                   "yes", 
-                   "hindi- joke lang oo",
-                   "di ko alam", 
-                   "tanungin mo ulit sakin", 
-                   "hindi",
-                   "ano?? hindi", 
+    var answers = ["yes", 
+                   "yes of course", 
+                   "no- jk yeah",
+                   "i dont know", 
+                   "ask me again", 
                    "no",
-                   "ahahahaha.... hindi", 
-                   "di ko alam ano ang tanong mo?", 
-                   "ulit ulit", 
-                   "mamaya na lang, di ko alam",
-                   "mamaya na", 
-                   "i don't know"];
+                   "what?? no", 
+                   "no",
+                   "ahahahaha.... no", 
+                   "i dont know whats your question?", 
+                   "again again", 
+                   "ask it later, i dont know",
+                   "just ask later"];
     
     window.onload = function() {
        var eight = document.getElementById("eight");
@@ -72,7 +61,7 @@
        eightball.addEventListener("click", function() {
          if (question.value.length < 1) {
           eight.innerText = "";
-          answer.innerText = "uy anong tanong mo??";
+          answer.innerText = "hey what's your question??";
          } else {
            eight.innerText = "";
            var num = Math.floor(Math.random() * Math.floor(answers.length));
@@ -96,11 +85,11 @@
     }
 
   </script>
-  <title>Tanong mo sa Pagong</title>
+  <title>Ask the Turtle</title>
 </head>
   <body>
-    <h1 align="center">Tanong mo sa Pagong (Ask the Turtle)</h1>
-    <h3 align="center">ikuwento mo sa pagong</h3>
+    <h1 align="center">Ask the Turtle</h1>
+    <h3 align="center">tell the story to the pagong</h3>
     <br>
     <input type="text" id="question" />
     <br>
@@ -109,7 +98,7 @@
     <br>
     <div id="eight-ball">
       <img src="games-img/img-pagong/pagong.png" alt="Snow" style="width:25%;">
-      <div id="eight">anong tanong mo</div>
+      <div id="eight">what's your question</div>
       <div id="answer"></div>
     </div>
     <a href="https://coderserif.github.io"
@@ -121,7 +110,7 @@
     <figcaption>
       website hosting by <a href="https://pages.github.com/" >Github Pages</a>
     </figcaption>
-    <a id="translate" href="/games/pagongeng">english mode for my homies who don't know filipino</a>
+    <a  href="/games/pagong">ok back to filipino lol</a>
     <div id="cursor" style></div>
   </body>
 </html>
