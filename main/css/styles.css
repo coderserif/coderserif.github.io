@@ -3,6 +3,10 @@ body {
     cursor: url('/main/image/cur/arrow.png'), auto;	
   }
 
+html {
+    cursor: url('/main/image/cur/arrow.png'), auto;	
+}
+
 h1,
 a:hover {
     background-image: linear-gradient(
