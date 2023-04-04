@@ -1,3 +1,27 @@
 body {
     background-image: url(/main/image/clod.jpg);
   }
+
+h1,
+a:hover {
+    background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet,
+      red
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 15s linear infinite;
+}
+
+@keyframes move {
+    to {
+      background-position: 500vh;
+    }
+  }
