@@ -1,5 +1,6 @@
 body {
     background-image: url(/main/image/clod.jpg);
+    cursor: url('/main/image/cur/arrow.png'), auto;	
   }
 
 h1,
