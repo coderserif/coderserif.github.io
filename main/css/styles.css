@@ -1,14 +1,23 @@
 body {
     background-image: url(/main/image/clod.jpg);
-    cursor: url('/main/image/cur/arrow.png'), auto;	
+    cursor: url('/main/image/cur/arrow.png'), auto;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
 html {
-    cursor: url('/main/image/cur/arrow.png'), auto;	
+    cursor: url('/main/image/cur/arrow.png'), auto;
+    
 }
 
 p {
-    font-size: 110%;
+    font-size: 150%;
+}
+
+a, button {
+  cursor: pointer;
 }
 
 h1,
@@ -31,6 +40,73 @@ a:hover {
 
 @keyframes move {
     to {
-      background-position: 500vh;
+      background-position: 100vh;
     }
   }
+
+
+  #gallerywrapper {
+    width:640px;
+    height:450px;
+    position:relative;
+} 
+
+#gallerywrapper #gallery {
+    position:absolute;
+    left:0;
+    top:0;
+    height:450px;
+    width:640px;
+    overflow:hidden;
+    text-align:center;
+} 
+
+#gallerywrapper #gallery div {
+    width:640px; height:900px; 
+    padding-top:10px; 
+    position:relative;
+} 
+
+#gallerywrapper #gallery div img {
+    clear:both; 
+    display:block; 
+    margin:0 auto; 
+    border:0;
+} 
+
+#gallerywrapper #gallery div h3 {
+    padding:10px 0 0 0; 
+    margin:0; 
+    font-size:18px;
+} 
+
+#gallerywrapper #gallery div p {
+    padding:5px 0; 
+    margin:0; 
+    font-size:12px; 
+    line-height:18px;
+} 
+
+#gallery .previous{ 
+    display:inline;
+    float:left;
+    margin-left:80px;
+    text-decoration:none;
+} 
+
+#gallery .next{ 
+    display:inline;
+    float:right;
+    margin-right:80px;
+    text-decoration:none;
+}
+
+::selection {
+  background: #0004ff;
+  color: #ffffff;
+}
+
+.window {
+  position: absolute;
+}
+
