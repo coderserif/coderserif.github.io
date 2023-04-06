@@ -19,6 +19,27 @@
             content="Serif's website. visit if you want. or don't. But you should"
         />
         <meta property="og:image" content="/main/image/favicon.png" />
+        <script>
+            fetch("/misc/misc-json/comix-json/comixsettings.json")
+                .then((response) => response.json())
+                .then((json) => {
+                    comixsetting = json;
+                    load(comixsetting);
+                })
+            .catch((error) => {
+                alert(
+                    "Failed to load comixsettings, Error Message:\n" +
+                    error +
+                    "\n\nTry Reloading..."
+            );
+            document.getElementById("comix").innerHTML =
+                "Data Failed To Load :(<br>";
+            });
+            function load(comixsetting) {
+                var comix = document.getElementById("comix");
+                comix.setAttribute("href", "/misc/comix?comix=" + (comixsetting.max - 1));
+            }
+        </script>
     </head>
     <body>
         <!--top window bar-->
@@ -35,7 +56,7 @@
         <br>
         <h1 align="center" style="font-family: 'Times New Roman', Times, serif;">serif home &hearts;</h1>
         <p align="right" style="font-family: 'Times New Roman', Times, serif;">links: <a href="https://youtube.com/@SirF_" style="font-family: 'Times New Roman', Times, serif;"> youtube </a><a href="https://coderserif.itch.io" style="font-family: 'Times New Roman', Times, serif;"> itch </a><a href="https://github.com/coderserif" style="font-family: 'Times New Roman', Times, serif;"> github </a></p>
-        <p align="center" style="font-family: 'Times New Roman', Times, serif;">welcome to my website!!!</p>
+        <p align="center" style="font-family: 'Times New Roman', Times, serif; text-shadow: 5px 5px 2px red;">welcome to my website!!!</p>
         <br>
         <br>
         <hr>
@@ -245,7 +266,7 @@
             </div>
           </div>
         <div class="window" style="width: 250px; height: 250px; top: 55px; left: 63px; flex-wrap: nowrap;" id="window">
-            <div class="title-bar">
+            <div class="title-bar" style="cursor: move;">
               <div class="title-bar-text">random gif i put here for no reason</div>
               <div class="title-bar-controls">
                 <button aria-label="Minimize" onclick="
@@ -269,7 +290,10 @@
           <h2 style="margin-left: 10px;">websites</h2>
           <p style="font-family: 'Times New Roman', Times, serif; margin-left: 10px; margin-right: 1100px;">if you knew this website, you know that this website had gone a major redesign from the old website. this design is the new one but you can still look at the previous websites made for the purpose of school, or entertainment.</p>
           <div>
-            <p>recipes: <a href="/recipes/omelette.html"> omelette </a><a href="/recipes/noodles.html"> noodles </a></p>
+            <p>recipes: <a href="/recipes/omelette"> omelette </a><a href="/recipes/noodles"> noodles </a></p>
+            <p>games: <a href="/games/redpanda"> red panda game </a><a href="/games/pagong"> tanong mo sa pagong </a><a href="/games/gdsecretvault"> gd secret vault </a></p>
+            <p>generators: <a href="/generators/wariodies"> wario dies </a><a href="/generators/yomamagenerated"> generated yo mama jokes </a></p>
+            <p>misc: <a href="/misc/comix" id="comix"> comix </a><a href="/misc/bigshot"> big shot tutorial </a><a href="/misc/myfavgames"> my FAVORITE GAMES!!! </a><a href="/misc/timer"> stupid timer </a><a href="/misc/javaplay"> java playtest </a></p>
           </div>
           <hr>
           <p align="center" style="font-family: 'Times New Roman', Times, serif;">hosted on <a href="https://pages.github.com" target="_blank">github pages</a></p>

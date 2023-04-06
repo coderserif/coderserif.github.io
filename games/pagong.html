@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/games/games-img/img-pagong/turt.png" type="image/x-icon" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://coderserif.github.io/" />
+  <meta property="og:title" content="Tanong mo sa Pagong" />
+  <meta
+    property="og:description"
+    content="ask the turtle"
+  />
+  <meta property="og:image" content="/games/games-img/img-pagong/turt.png" />
+  <style>
+
+    body {
+      font-family: sans-serif;
+      
+    }
+
+    #eight-ball {
+      text-align: center;
+      position: relative;
+    }
+
+    #question {
+      text-align: center;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      width: 400px;
+      font-size:22px;
+    }
+
+    #eight, #answer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  </style>
+  <script type="text/javascript">
+    var answers = ["oo", 
+                   "oo naman", 
+                   "yes", 
+                   "hindi- joke lang oo",
+                   "di ko alam", 
+                   "tanungin mo ulit sakin", 
+                   "hindi",
+                   "ano?? hindi", 
+                   "no",
+                   "ahahahaha.... hindi", 
+                   "di ko alam ano ang tanong mo?", 
+                   "ulit ulit", 
+                   "mamaya na lang, di ko alam",
+                   "mamaya na", 
+                   "i don't know"];
+    
+    window.onload = function() {
+       var eight = document.getElementById("eight");
+       var answer = document.getElementById("answer");
+       var eightball = document.getElementById("eight-ball");
+       var question = document.getElementById("question");
+       
+       eightball.addEventListener("click", function() {
+         if (question.value.length < 1) {
+          eight.innerText = "";
+          answer.innerText = "uy anong tanong mo??";
+         } else {
+           eight.innerText = "";
+           var num = Math.floor(Math.random() * Math.floor(answers.length));
+           answer.innerText = answers[num];
+         }
+       });
+      }
+  </script>
+  <title>Tanong mo sa Pagong</title>
+</head>
+  <body>
+    <h1 align="center">Tanong mo sa Pagong</h1>
+    <h3 align="center">ikuwento mo sa pagong</h3>
+    <br>
+    <input type="text" id="question" />
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="eight-ball">
+      <img src="games-img/img-pagong/pagong.png" style="width:25%; cursor: pointer;">
+      <div id="eight">anong tanong mo</div>
+      <div id="answer"></div>
+    </div>
+    <a href="https://coderserif.github.io"
+      align="center"
+      >back to main page
+      </a>
+    <figcaption>by coderserif</figcaption>
+    <figcaption>turtle image by google idk</figcaption>
+    <figcaption>
+      website hosting by <a href="https://pages.github.com/" >Github Pages</a>
+    </figcaption>
+    <a id="translate" href="/games/pagongeng">english mode for my homies who don't know filipino</a>
+    <div id="cursor" style></div>
+  </body>
+</html>

@@ -37,6 +37,11 @@ a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: move 15s linear infinite;
+    
+}
+
+h1 {
+  text-shadow: 120px 80px 10px black;
 }
 
 @keyframes move {
