@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="/main/css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/98.css" />
-    <link rel="icon" type="image/x-icon" href="/main/image/favicon.png">
-    <title>Serif Home</title>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://coderserif.github.io/" />
-    <meta
-      name="keywords"
-      content="sirf,coderserif,github,serifshome,serif,wariodies,online,coderserifgithub"
-    />
-    <meta property="og:title" content="serifs home" />
-    <meta
-      property="og:description"
-      content="Serif's website. visit if you want. or don't. But you should"
-    />
-    <meta property="og:image" content="/main/image/favicon.png" />
-</head>
+    <head>
+        <!--css-->
+        <link rel="stylesheet" href="/main/css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/98.css" />
+        <link rel="icon" type="image/x-icon" href="/main/image/favicon.png">
+        <!--cool embed stuff-->
+        <title>Serif Home</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://coderserif.github.io/" />
+        <meta
+            name="keywords"
+            content="sirf,coderserif,github,serifshome,serif,wariodies,online,coderserifgithub"
+        />
+        <meta property="og:title" content="serifs home" />
+        <meta
+            property="og:description"
+            content="Serif's website. visit if you want. or don't. But you should"
+        />
+        <meta property="og:image" content="/main/image/favicon.png" />
+    </head>
     <body>
-        <div class="title-bar" id="title">
+        <!--top window bar-->
+        <div class="title-bar" id="title" style="flex-wrap: nowrap;">
             <div class="title-bar-text">serif home</div>
             <div class="title-bar-controls">
-              <button aria-label="Minimize"></button>
+              <button aria-label="Minimize" onclick="alertclose()"></button>
               <button aria-label="Restore"></button>
-              <button aria-label="Close"></button>
+              <button aria-label="Close" onclick="alertclose()"></button>
             </div>
         </div>
+        <!-- big top title -->
         <br>
         <br>
         <h1 align="center" style="font-family: 'Times New Roman', Times, serif;">serif home &hearts;</h1>
-        <p align="right" style="font-family: 'Times New Roman', Times, serif;">links: <a href="https://youtube.com/@SirF_" style="font-family: 'Times New Roman', Times, serif;"> youtube </a><a href="https://coderserif.itch.io" style="font-family: 'Times New Roman', Times, serif;"> itch </a></p>
+        <p align="right" style="font-family: 'Times New Roman', Times, serif;">links: <a href="https://youtube.com/@SirF_" style="font-family: 'Times New Roman', Times, serif;"> youtube </a><a href="https://coderserif.itch.io" style="font-family: 'Times New Roman', Times, serif;"> itch </a><a href="https://github.com/coderserif" style="font-family: 'Times New Roman', Times, serif;"> github </a></p>
         <p align="center" style="font-family: 'Times New Roman', Times, serif;">welcome to my website!!!</p>
         <br>
         <br>
         <hr>
+        <!-- fanart -->
         <br>
         <br>
         <div id="gallerywrapper">
@@ -222,41 +227,55 @@
             </div>
         </div>
         </div>
-        <div class="window" style="width: 1200px; height: 300px; top: 425px; left: 618px;">
+        <div class="window" style="top: 425px; left: 618px; flex-wrap: nowrap;" id="window-about">
             <div class="title-bar" style="cursor: move;">
               <div class="title-bar-text">About</div>
               <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
               </div>
             </div>
             <div class="window-body">
                 <h2>about</h2>
-              <p>hi my name is serif. welcome to the really cool website. i like dogs, cats, plushies, video games, making art, coding, and sleepign. i like making art of my original characters, or the things i like! my favorite food is noodles and my favorite video games currently is minecraft, roblox, valorant, bloons, maybe more.</p>
+              <p>hi my name is serif. welcome to the really cool website. i like dogs, cats, plushies, video games, making art, coding, and sleepign.</p>
+              <p>i like making art of my original characters, or the things i like! my favorite food is noodles and my favorite video games currently is minecraft, roblox, valorant, bloons, maybe more.</p>
               <br>
               <section class="field-row" style="justify-content: flex-end">
-                <button>ok i dont care</button>
-                <button disabled>wow cool</button>
+                <button onclick="document.body.querySelector('#window-about').style.display = 'none'">ok i dont care</button>
+                <button disabled style="cursor: url('/main/image/cur/arrow.png'), auto;">wow cool</button>
               </section>
             </div>
           </div>
-        <div class="window" style="width: 250px; height: 250px; top: 55px; left: 63px;" id="window">
+        <div class="window" style="width: 250px; height: 250px; top: 55px; left: 63px; flex-wrap: nowrap;" id="window">
             <div class="title-bar">
               <div class="title-bar-text">random gif i put here for no reason</div>
               <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
+                <button aria-label="Minimize" onclick="
+                    document.body.querySelector('#window-gif').style.display = 'none'
+                    changegifheightminimize()
+                    "></button>
+                <button aria-label="Maximize" onclick="
+                document.body.querySelector('#window-gif').style.display = 'block'
+                    changegifheightmaximize()
+                    "></button>
+                <button aria-label="Close" onclick="
+                    document.body.querySelector('#window').style.display = 'none'
+                "></button>
               </div>
             </div>
-            <div class="window-body">
+            <div class="window-body" id="window-gif">
                 <img src="/main/image/squish.gif" alt="dfh" style="width: 90%; height: 90%;">
             </div>
           </div>
           <hr>
+          <h2 style="margin-left: 10px;">websites</h2>
+          <p style="font-family: 'Times New Roman', Times, serif; margin-left: 10px; margin-right: 1100px;">if you knew this website, you know that this website had gone a major redesign from the old website. this design is the new one but you can still look at the previous websites made for the purpose of school, or entertainment.</p>
+          <div>
+            <p>recipes: <a href="/recipes/omelette.html"> omelette </a><a href="/recipes/noodles.html"> noodles </a></p>
+          </div>
+          <hr>
+          <p align="center" style="font-family: 'Times New Roman', Times, serif;">hosted on <a href="https://pages.github.com" target="_blank">github pages</a></p>
           <script>
             dragElement(document.getElementById("window"));
+            dragElement(document.getElementById("window-about"));
             
             function dragElement(elmnt) {
               var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -297,6 +316,18 @@
                 document.onmouseup = null;
                 document.onmousemove = null;
               }
+            }
+
+            function changegifheightminimize(){
+                        var element = document.getElementById("window");
+                        element.style.height = "30px";
+            }
+            function changegifheightmaximize(){
+                        var element = document.getElementById("window");
+                        element.style.height = "250px";
+            }
+            function alertclose() {
+                alert("no");
             }
             </script>
     </body>

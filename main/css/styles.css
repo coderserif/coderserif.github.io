@@ -12,8 +12,9 @@ html {
     
 }
 
-p {
+p, a {
     font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 a, button {
