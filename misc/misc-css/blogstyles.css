@@ -1,0 +1,36 @@
+html, * {
+    cursor: url('/main/image/cur/arrow.png'), auto;
+}
+
+body {
+    background-image: url(/misc/misc-img/img-blog/wood.png);
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 5px 5px 2px red;
+}
+
+@keyframes color {
+    from { background-color: red;}
+    to { background-color: rgb(236, 238, 130);}
+}
+
+#title {
+    animation-name: color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+a {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}

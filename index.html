@@ -259,6 +259,7 @@
               <p>hi my name is serif. welcome to the really cool website. i like dogs, cats, plushies, video games, making art, coding, and sleepign.</p>
               <p>i like making art of my original characters, or the things i like! my favorite food is noodles and my favorite video games currently is minecraft, roblox, valorant, bloons, maybe more.</p>
               <br>
+              <p id="art">on the left, there is a bunch of amazing art of my character ^-^</p>
               <section class="field-row" style="justify-content: flex-end">
                 <button onclick="document.body.querySelector('#window-about').style.display = 'none'">ok i dont care</button>
                 <button disabled style="cursor: url('/main/image/cur/arrow.png'), auto;">wow cool</button>
@@ -288,6 +289,11 @@
           </div>
           <hr>
           <h2 style="margin-left: 10px;">websites</h2>
+          <div>
+            <p><a href="/misc/blog"> blog </a></p>
+          </div>
+          <hr>
+          <h2 style="margin-left: 10px;">more websites</h2>
           <p style="font-family: 'Times New Roman', Times, serif;">if you knew this website, you know that this website had gone a major redesign from the old website. this design is the new one but you can still look at the previous websites made for the purpose of school, or entertainment.</p>
           <div>
             <p>recipes: <a href="/recipes/omelette"> omelette </a><a href="/recipes/noodles"> noodles </a></p>
@@ -331,12 +337,14 @@
                 pos3 = e.clientX;
                 pos4 = e.clientY;
                 // set the element's new position:
+                document.getElementById("art").innerHTML = "why did you move this window stop moving it";
                 elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
                 elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
               }
             
               function closeDragElement() {
                 /* stop moving when mouse button is released:*/
+                document.getElementById("art").innerHTML = "stop";
                 document.onmouseup = null;
                 document.onmousemove = null;
               }
