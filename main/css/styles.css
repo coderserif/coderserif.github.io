@@ -1,5 +1,5 @@
 body {
-    background-image: url(/main/image/clod.jpg);
+    background-image: url(https://i.gifer.com/1ez9.gif);
     cursor: url('/main/image/cur/arrow.png'), auto;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 0%;
@@ -36,7 +36,7 @@ a:hover {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: move 15s linear infinite;
+    animation: move 10s linear infinite;
     
 }
 
