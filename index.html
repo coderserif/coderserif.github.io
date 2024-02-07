@@ -19,27 +19,6 @@
             content="Serif's website. visit if you want. or don't. But you should"
         />
         <meta property="og:image" content="/main/image/favicon.png" />
-        <script>
-            fetch("/misc/misc-json/comix-json/comixsettings.json")
-                .then((response) => response.json())
-                .then((json) => {
-                    comixsetting = json;
-                    load(comixsetting);
-                })
-            .catch((error) => {
-                alert(
-                    "Failed to load comixsettings, Error Message:\n" +
-                    error +
-                    "\n\nTry Reloading..."
-            );
-            document.getElementById("comix").innerHTML =
-                "Data Failed To Load :(<br>";
-            });
-            function load(comixsetting) {
-                var comix = document.getElementById("comix");
-                comix.setAttribute("href", "/misc/comix?comix=" + (comixsetting.max - 1));
-            }
-        </script>
     </head>
     <body>
         <!--top window bar-->
@@ -291,7 +270,17 @@
           <hr>
           <h2 style="margin-left: 10px;">stuffs</h2>
           <div>
-            <p><a href="/misc/blog"> blog </a><a href="/misc/comix" id="comix"> comix </a></p>
+            <p><a href="/misc/blog"> blog </a><a href="/misc/comix" id="comix-link"> comix </a></p>
+            <script src="/misc/misc-js/comix.js"></script>
+            <script>
+                async function updateComixLink() {
+                    let settings = await comix.fetchSettings()
+                    document.getElementById("comix-link")
+                        .href = `/misc/comix?comix=${Object.keys(settings)[0]}`
+                }
+
+                updateComixLink()
+            </script>
           </div>
           <hr>
           <h2 style="margin-left: 10px;">fun</h2>
