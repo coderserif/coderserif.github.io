@@ -270,17 +270,7 @@
           <hr>
           <h2 style="margin-left: 10px;">stuffs</h2>
           <div>
-            <p><a href="/misc/blog"> blog </a><a href="/misc/comix" id="comix-link"> comix </a></p>
-            <script src="/misc/misc-js/comix.js"></script>
-            <script>
-                async function updateComixLink() {
-                    let settings = await comix.fetchSettings()
-                    document.getElementById("comix-link")
-                        .href = `/misc/comix?comix=${Object.keys(settings)[0]}`
-                }
-
-                updateComixLink()
-            </script>
+            <p>main stuffs: <a href="/misc/blog"> blog </a></p>
           </div>
           <hr>
           <h2 style="margin-left: 10px;">fun</h2>
@@ -289,8 +279,17 @@
             <p>recipes: <a href="/recipes/omelette"> omelette </a><a href="/recipes/noodles"> noodles </a></p>
             <p>games: <a href="/games/redpanda"> red panda game </a><a href="/games/pagong"> tanong mo sa pagong </a><a href="/games/gdsecretvault"> gd secret vault </a></p>
             <p>generators: <a href="/generators/wariodies"> wario dies </a><a href="/generators/yomamagenerated"> generated yo mama jokes </a></p>
-            <p>misc: <a href="/misc/bigshot"> big shot tutorial </a><a href="/misc/myfavgames"> my FAVORITE GAMES!!! </a><a href="/misc/timer"> stupid timer </a><a href="/misc/javaplay"> java playtest </a></p>
+            <p>misc: <a href="/misc/comix?=unknown" id="comix-link"> comix </a><a href="/misc/bigshot"> big shot tutorial </a><a href="/misc/myfavgames"> my FAVORITE GAMES!!! </a><a href="/misc/timer"> stupid timer </a><a href="/misc/javaplay"> java playtest </a></p>
           </div>
+          <script src="/misc/misc-js/comix.js"></script>
+          <script>
+            async function updateComixLink() {
+                let settings = await comix.fetchSettings()
+                document.getElementById("comix-link")
+                    .href = `/misc/comix?comix=${Object.keys(settings)[0]}`
+            }
+            updateComixLink()
+          </script>
           <hr>
           <p align="center" style="font-family: 'Times New Roman', Times, serif;">hosted on <a href="https://pages.github.com" target="_blank">github pages</a></p>
           <script>
