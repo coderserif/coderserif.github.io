@@ -16,7 +16,6 @@
     />
     <meta property="og:image" content="/img/neutral.png" />
     <title>Serif's Comix</title>
-    <script src="misc-js/comixload.js"></script>
   </head>
   <body id="body">
     <h1>Serif's Comix</h1>
@@ -31,50 +30,30 @@
     <hr />
     <div class="dropdown">
         <button class="dropbtn">Comics  &#10549;</button>
-        <div class="dropdown-content">
-          <a href="comix?comix=0">0. Cookies</a>
-          <a href="comix?comix=1">1. Bid</a>
-          <a href="comix?comix=2">2. Bored</a>
-          <a href="comix?comix=3">3. Breakdown</a>
-          <a href="comix?comix=4">4. Cute</a>
-          <a href="comix?comix=5">5. Flirt</a>
-          <a href="comix?comix=6">6. Fork</a>
-          <a href="comix?comix=7">7. Gift</a>
-          <a href="comix?comix=8">8. Glasses</a>
-          <a href="comix?comix=9">9. Joe</a>
-          <a href="comix?comix=10">10. Perfume</a>
-          <a href="comix?comix=11">11. Salt</a>
-          <a href="comix?comix=12">12. Stab</a>
-          <a href="comix?comix=13">13. Bully</a>
-          <a href="comix?comix=14">14. Tall</a>
-          <a href="comix?comix=15">15. Valentines</a>
-          <a href="comix?comix=16">16. Moisture</a>
-          <a href="comix?comix=17">17. Text</a>
-          <a href="comix?comix=18">18. Walk</a>
-          <a href="comix?comix=19">19. Noodles</a>
-          <a href="comix?comix=20">20. = 10 + 9</a>
-          <a href="comix?comix=21">21. Steak</a>
-          <a href="comix?comix=22">22. Drawing</a>
-          <a href="comix?comix=23">23. Tic-Tacs</a>
-          <a href="comix?comix=24">24. Color</a>
-          <a href="comix?comix=25">25. Stomachache</a>
-          <a href="comix?comix=26">26. Two Part Part One</a>
-          <a href="comix?comix=27">27. Two Part Part Two</a>
-          <a href="comix?comix=28">28. D.N.</a>
-          <a href="comix?comix=29">29. Kill</a>
-          <a href="comix?comix=30">30. Up</a>
-          <a href="comix?comix=31">31. Marry Part One</a>
-          <a href="comix?comix=32">32. Marry Part Two</a>
-          <a href="comix?comix=33">33. Comix Tutorial</a>
-          <a href="comix?comix=34">34. Bird-Watching</a>
-          <a href="comix?comix=35">35. Brownies</a>
-          <a href="comix?comix=36">36. Help</a>
-          <a href="comix?comix=37">37. First Met</a>
-          <a href="comix?comix=38">38. Month</a>
-          <a href="comix?comix=39">39. Art Critique</a>
-          <a href="comix?comix=40">40. Comic Idea</a>
-          <a href="comix?comix=41">41. Arrivals</a>
-        </div>
+        <div id="comix-dropdown" class="dropdown-content"></div>
     </div>
+
+    <center id="comix">
+      <h2 id="comix-title"></h2>
+
+      <a id="comix-image-link">
+        <img id="comix-image" width="500px">
+      </a>
+
+      <p id="comix-description"></p>
+
+      <a id="comix-arrow-left">
+        <img align="left" src="comix/arrow-left.png">
+      </a>
+      <a id="comix-arrow-right">
+        <img align="right" src="comix/arrow-right.png">
+      </a>
+    </center>
   </body>
+
+  <!-- This script needs to go at the bottom -->
+  <script src="misc-js/comix.js"></script>
+  <script>
+    comix.loadPage()
+  </script>
 </html>
