@@ -47,7 +47,7 @@ var comix = (() => {
     for (let i = 0; i < keys.length; i++) {
       let link = document.createElement("a")
       link.href = `comix?comix=${keys[i]}`
-      link.textContent = `${i}. ${settings[keys[i]].title}`
+      link.textContent = `${i+1}. ${settings[keys[i]].title}`
       dropdown.append(link)
     }
   
