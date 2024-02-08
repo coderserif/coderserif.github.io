@@ -285,8 +285,9 @@
           <script>
             async function updateComixLink() {
                 let settings = await comix.fetchSettings()
+                let keys = Object.keys(settings)
                 document.getElementById("comix-link")
-                    .href = `/misc/comix?comix=${Object.keys(settings)[0]}`
+                    .href = `/misc/comix?comix=${keys[keys.length-1]}`
             }
             updateComixLink()
           </script>
