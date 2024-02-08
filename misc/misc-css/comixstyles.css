@@ -52,11 +52,23 @@ html {
   animation-duration: 0.75s;
   }
 
+#comix-image {
+  border-style: solid;
+  border-color: black;
+}
+
+#title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
 /* Style The Dropdown Button */
 .dropbtn {
   background-color: rgb(255, 217, 112);
   color: rgb(0, 0, 0);
-  padding: 5px 30px;
+  padding: 5px 80px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -74,8 +86,8 @@ html {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
-  max-height: 160px;
+  min-width: 200px;
+  max-height: 500px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
