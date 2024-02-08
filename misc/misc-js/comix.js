@@ -60,6 +60,7 @@ var comix = (() => {
     
     document.getElementById("comix-title").textContent = comix.title;
     document.getElementById("comix-image").src = comix.image
+    document.getElementById("comix-image-link").href = comix.image
     document.getElementById("comix-description").textContent = comix.description
     
     let arrowLeft = document.getElementById("comix-arrow-left")
