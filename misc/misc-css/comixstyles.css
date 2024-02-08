@@ -5,11 +5,11 @@ a {
 }
 
 a {
-  text-decoration: none; // changed from text-decoration:underline
+  text-decoration: none; /* changed from text-decoration:underline */
 }
 
 a:hover {
-  text-decoration: underline; // changed from text:decoration:none
+  text-decoration: underline; /* changed from text:decoration:none */
 }
 
 button, a, img {
