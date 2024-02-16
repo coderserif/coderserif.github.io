@@ -1,0 +1,92 @@
+html, * {
+    cursor: url('/main/image/cur/arrow.png'), auto;
+}
+
+body {
+    background-image: url(https://web.archive.org/web/20090831030452if_/http://geocities.com/music9494/-001.gif);
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 5%;
+    gap: 40px 0px;
+}
+
+#albumcover {
+    cursor: pointer;
+}
+
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  @keyframes hvr-ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+
+
+  #albumcover:hover {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+a, button {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: floralwhite;
+    text-shadow: 5px 5px 2px rgb(255, 255, 255);
+}
+
+@keyframes color {
+    from { background-color: rgb(202, 3, 3);}
+    to { background-color: rgb(51, 60, 185);}
+}
+
+#title {
+    animation-name: color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+a {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
