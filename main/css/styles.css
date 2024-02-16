@@ -1,5 +1,6 @@
 body {
     background-image: url(https://i.gifer.com/1ez9.gif);
+    background-size: cover;
     cursor: url('/main/image/cur/arrow.png'), auto;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 0%;
