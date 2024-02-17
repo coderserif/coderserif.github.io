@@ -40,5 +40,6 @@
     "month": {"title": "Month", "description": "elementary was cringe", "image": "/misc/comix/38.png"}, 
     "art-critique": {"title": "Art Critique", "description": "[SCHOOL] isnt it beautiful?", "image": "/misc/comix/39.png"}, 
     "comic-idea": {"title": "Comic Idea", "description": "[SCHOOL] you see the joke is garfield", "image": "/misc/comix/40.png"}, 
-    "arrivals": {"title": "Arrivals", "description": "the specific person has just arrived!", "image": "/misc/comix/41.png"}
+    "arrivals": {"title": "Arrivals", "description": "the specific person has just arrived!", "image": "/misc/comix/41.png"},
+    "beemovie": {"title": "Bee Movie", "description": "yellow black yellow black yellow black oooh black and yellow", "image": "/misc/comix/42.png"}
 }
