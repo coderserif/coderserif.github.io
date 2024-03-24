@@ -18,6 +18,11 @@ body {
 }
 
 #albumcover {
+    width: 300px;
+    height: 300px;
+}
+
+#albumcover {
     cursor: pointer;
 }
 
