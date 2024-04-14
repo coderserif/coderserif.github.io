@@ -43,5 +43,10 @@
     "arrivals": {"title": "Arrivals", "description": "the specific person has just arrived!", "image": "/misc/comix/41.png"},
     "beemovie": {"title": "Bee Movie", "description": "yellow black yellow black yellow black oooh black and yellow", "image": "/misc/comix/42.png"},
     "ycdt1": {"title": "YCDT! Part One", "description": " !  ", "image": "/misc/comix/43.png"},
-    "unicode": {"title": "Longest Unicode", "description": "﷽", "image": "/misc/comix/44.png"}
+    "unicode": {"title": "Longest Unicode", "description": "﷽", "image": "/misc/comix/44.png"},
+    "thebestdish1": {"title": "The Best Dish Part One", "description": "[SCHOOL] theyre gonna fail", "image": "/misc/comix/45.png"},
+    "thebestdish2": {"title": "The Best Dish Part Two", "description": "[SCHOOL] theyre absolutely gonna fail", "image": "/misc/comix/46.png"},
+    "thebestdish3": {"title": "The Best Dish Part Three", "description": "[SCHOOL] yikes", "image": "/misc/comix/47.png"},
+    "thebestdish4": {"title": "The Best Dish Part Four", "description": "[SCHOOL] damn", "image": "/misc/comix/48.png"},
+    "mall": {"title": "Mall", "description": "JKUBFGSWKBHFGKIJSWHFGIUHGIHSWRIFHSWIFGUHEISWKFHRBNIKSWLGHU", "image": "/misc/comix/49.png"}
 }
