@@ -23,7 +23,7 @@ a, button {
 }
 
 h1,
-a:hover {
+a:hover, h4 {
     background-image: linear-gradient(
       to right,
       red,
@@ -117,3 +117,57 @@ h1 {
   position: absolute;
 }
 
+
+
+
+#google_translate_element select{
+  background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet,
+      red
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 10s linear infinite;
+}
+
+
+body > .skiptranslate {
+  display: none;
+}
+
+
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+  display: none !important;
+}
+
+.VIpgJd-suEOdc, .VIpgJd-yAWNEb-L7lbkb, .VIpgJd-ZVi9od-aZ2wEe-wOHMyf, .VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+  display: none !important;
+}
+
+body {
+  top: 0px !important; 
+  }
+  
+  .goog-logo-link {
+      display:none !important;
+  } 
+      
+  .goog-te-gadget {
+      color: transparent !important;
+  }
+  
+  .goog-te-banner-frame.skiptranslate {
+  display: none !important;
+  } 
+
+#google_translate_element {
+  margin-left: 90px;
+}
