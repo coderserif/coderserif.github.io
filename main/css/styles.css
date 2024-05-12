@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://i.gifer.com/1ez9.gif);
+    background-image: url(https://i.gifer.com/1ez9.gif); 
     background-size: cover;
     cursor: url('/main/image/cur/arrow.png'), auto;
     font-family: 'Times New Roman', Times, serif;
@@ -170,4 +170,19 @@ body {
 
 #google_translate_element {
   margin-left: 90px;
+}
+
+
+
+
+#exploding {
+  z-index: 100;
+  position: absolute;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
 }
