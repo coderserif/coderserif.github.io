@@ -120,7 +120,7 @@ h1 {
 
 
 
-#google_translate_element select{
+#google_translate_element select:hover{
   background-image: linear-gradient(
       to right,
       red,
