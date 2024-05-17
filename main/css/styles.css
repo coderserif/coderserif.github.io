@@ -1,6 +1,7 @@
 body {
     background-image: url(https://i.gifer.com/1ez9.gif); 
     background-size: cover;
+    
     cursor: url('/main/image/cur/arrow.png'), auto;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 0%;
@@ -10,6 +11,11 @@ body {
 
 html {
     cursor: url('/main/image/cur/arrow.png'), auto;
+      background: url('https://i.gifer.com/1ez9.gif') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     
 }
 
@@ -178,7 +184,6 @@ body {
 #exploding {
   z-index: 100;
   position: absolute;
-  user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
