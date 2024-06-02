@@ -10,6 +10,7 @@ body {
   }
 
 html {
+  image-rendering: pixelated;
     cursor: url('/main/image/cur/arrow.png'), auto;
       background: url('https://i.gifer.com/1ez9.gif') no-repeat center center fixed; 
       -webkit-background-size: cover;
