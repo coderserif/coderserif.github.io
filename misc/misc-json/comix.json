@@ -49,5 +49,6 @@
     "thebestdish3": {"title": "The Best Dish Part Three", "description": "[SCHOOL] yikes", "image": "/misc/comix/47.png"},
     "thebestdish4": {"title": "The Best Dish Part Four", "description": "[SCHOOL] damn", "image": "/misc/comix/48.png"},
     "mall": {"title": "Mall", "description": "JKUBFGSWKBHFGKIJSWHFGIUHGIHSWRIFHSWIFGUHEISWKFHRBNIKSWLGHU", "image": "/misc/comix/49.png"},
-    "japanese": {"title": "Japanese", "description": "morning, are you ok?", "image": "/misc/comix/50.png"}
+    "japanese": {"title": "Japanese", "description": "morning, are you ok?", "image": "/misc/comix/50.png"},
+    "dream": {"title": "Dream", "description": " ", "image": "/misc/comix/51.png"}
 }
