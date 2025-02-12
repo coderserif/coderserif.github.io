@@ -50,5 +50,8 @@
     "thebestdish4": {"title": "The Best Dish Part Four", "description": "[SCHOOL] damn", "image": "/misc/comix/48.png"},
     "mall": {"title": "Mall", "description": "JKUBFGSWKBHFGKIJSWHFGIUHGIHSWRIFHSWIFGUHEISWKFHRBNIKSWLGHU", "image": "/misc/comix/49.png"},
     "japanese": {"title": "Japanese", "description": "morning, are you ok?", "image": "/misc/comix/50.png"},
-    "dream": {"title": "Dream", "description": " ", "image": "/misc/comix/51.png"}
+    "dream": {"title": "Dream", "description": " ", "image": "/misc/comix/51.png"},
+    "cat-comic-part-one": {"title": "Cat Comic Part One", "description": "[SCHOOL] will her wish be fulfilled? find out in part two", "image": "/misc/comix/52.png"},
+    "cat-comic-part-two": {"title": "Cat Comic Part Two", "description": "[SCHOOL] her wish has been fulfilled", "image": "/misc/comix/53.png"},
+    "assistance": {"title": "Assistance", "description": "time to buy more snacks", "image": "/misc/comix/54.png"}
 }
