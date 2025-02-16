@@ -441,11 +441,11 @@
               <div class="title-bar-controls">
                 <button aria-label="Minimize" onclick="
                     document.body.querySelector('#window-gif').style.display = 'none'
-                    changegifheightminimize()
+                    changegifheightminimize1()
                     "></button>
                 <button aria-label="Maximize" onclick="
                 document.body.querySelector('#window-gif').style.display = 'block'
-                    changegifheightmaximize()
+                    changegifheightmaximize1()
                     "></button>
                 <button aria-label="Close" onclick="
                     document.body.querySelector('#window').style.display = 'none'
@@ -463,11 +463,11 @@
               <div class="title-bar-controls">
                 <button aria-label="Minimize" onclick="
                     document.body.querySelector('#window-gif2').style.display = 'none'
-                    changegifheightminimize()
+                    changegifheightminimize2()
                     "></button>
                 <button aria-label="Maximize" onclick="
                 document.body.querySelector('#window-gif2').style.display = 'block'
-                    changegifheightmaximize()
+                    changegifheightmaximize2()
                     "></button>
                 <button aria-label="Close" onclick="
                     document.body.querySelector('#window2').style.display = 'none'
@@ -485,11 +485,11 @@
               <div class="title-bar-controls">
                 <button aria-label="Minimize" onclick="
                     document.body.querySelector('#window-gif3').style.display = 'none'
-                    changegifheightminimize()
+                    changegifheightminimize3()
                     "></button>
                 <button aria-label="Maximize" onclick="
                 document.body.querySelector('#window-gif3').style.display = 'block'
-                    changegifheightmaximize()
+                    changegifheightmaximize3()
                     "></button>
                 <button aria-label="Close" onclick="
                     document.body.querySelector('#window3').style.display = 'none'
@@ -507,11 +507,11 @@
               <div class="title-bar-controls">
                 <button aria-label="Minimize" onclick="
                     document.body.querySelector('#window-gif4').style.display = 'none'
-                    changegifheightminimize()
+                    changegifheightminimize4()
                     "></button>
                 <button aria-label="Maximize" onclick="
                 document.body.querySelector('#window-gif4').style.display = 'block'
-                    changegifheightmaximize()
+                    changegifheightmaximize4()
                     "></button>
                 <button aria-label="Close" onclick="
                     document.body.querySelector('#window4').style.display = 'none'
@@ -551,24 +551,39 @@
                 for (const win of document.body.getElementsByClassName("window")) {
                     draggable(win);
         
-                    function changegifheightminimize(){
+                    function changegifheightminimize1(){
                         var element = document.getElementById("window");
                         element.style.height = "30px";
+                        
+                    }
+                    function changegifheightminimize2(){
                         var element = document.getElementById("window2");
                         element.style.height = "30px";
+                        
+                    }
+                    function changegifheightminimize3(){
                         var element = document.getElementById("window3");
                         element.style.height = "30px";
+                        
+                    }
+                    function changegifheightminimize4(){
                         var element = document.getElementById("window4");
                         element.style.height = "30px";
                         
                     }
-                    function changegifheightmaximize(){
+                    function changegifheightmaximize1(){
                         var element = document.getElementById("window");
                         element.style.height = "270px";
+                    }
+                    function changegifheightmaximize2(){
                         var element = document.getElementById("window2");
                         element.style.height = "270px";
+                    }
+                    function changegifheightmaximize3(){
                         var element = document.getElementById("window3");
                         element.style.height = "270px";
+                    }
+                    function changegifheightmaximize4(){
                         var element = document.getElementById("window4");
                         element.style.height = "270px";
                     }
