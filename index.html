@@ -25,7 +25,7 @@
     <body>
         <!--top window bar-->
         <div class="title-bar" id="title" style="flex-wrap: nowrap;">
-            <div class="title-bar-text">seriffffffffff</div>
+            <div class="title-bar-text" id="titlebartext" ></div>
             <div class="title-bar-controls">
               <button aria-label="Minimize" onclick="alertclose()"></button>
               <button aria-label="Restore"></button>
@@ -194,13 +194,37 @@
                         "https://media1.tenor.com/m/gm_mhpzK1wsAAAAC/gato-cat.gif",
                         "https://media1.tenor.com/m/Z5x6xrH6_AQAAAAC/cat-kissing.gif"
                         ];
+                
+            const windowname = [
+                        "serif website",
+                        "SERIF HOMEEE",
+                        "dsgsdfg",
+                        "yo why are you readingthis",
+                        "did you know this title changes every refresh? heh, i knnow right i'm so good at coding",
+                        "i hope no one notices that i stole a bunch of code to make this",
+                        "dont press the window buttons!! (wink wink nudge nudge)",
+                        "youtube.com",
+                        "go follow me serifsirf",
+                        "go follow ogghostjelly all socials",
+                        "serif serif serif serif serif serif serif serif serif serif serif serif serif serif serif serif serif serif ",
+                        "hi my name is, what? my name is who? my name is *chkachka* slim shady",
+                        "dfghdzxghdsxzghjdxghjszdxthjsedtg",
+                        "IF YOU KNOW ME IN REAL LIFE, DO YOU REALLY KNOW ME?",
+                        "the fact that a lot of what i like/my personality/interests can be easily deduced from this website published on the internet.... yikess"
+                        ];
+            
             const random = Math.floor(Math.random() * gifs.length);
+            const random2 = Math.floor(Math.random() * windowname.length);
 
             document.addEventListener("DOMContentLoaded", function(){
                 var elem = document.createElement("img");
                 elem.src = (random, gifs[random]);
                 elem.setAttribute("width", "97%");
                 document.getElementById("window-gif").appendChild(elem);
+
+                var titlebartext = document.createElement("span");
+                titlebartext.innerHTML = (random, windowname[random2]);
+                document.getElementById("titlebartext").appendChild(titlebartext);
             });
             
             
@@ -400,21 +424,20 @@
                     </div>
                 </div>
                 <div style="margin-right: 100px;" align="right">
-                    <h4>website update as of FEB 12 2025: </h4>
-                    <h4>NEW COMICC + SCHOOL COMICS DROPPED</h4>
-                    <img src="/misc/comix/52.png" alt="" width="200px" height="200px">
-                    <img src="/misc/comix/54.png" alt="" width="200px" height="200px">
+                    <h4>website update as of MAR 9 2025: </h4>
+                    <h4>website visual update + blog post. enjoy</h4>
+                    <img src="https://media1.tenor.com/m/3pGwdYcs7Z4AAAAC/update-update-is.gif" alt="" width="600px" height="200px">
                     <br>
                     <br>
                     <br>
-                    <a href="/misc/comix?comix=assistance"> click here to look at it right this mfing second</a>
+                    <a href="/misc/blogs/mar92025.html"> click here to bless your eyeballs with content</a>
                 </div>
             </div>
             </div>
         </div>
         
         <div class="window" style="top: 542px; left: 580px; flex-wrap: nowrap; margin: 0%;" id="window-about">
-            <div class="title-bar" style="cursor: move;">
+            <div class="title-bar" style="cursor: url('/main/image/cur/move_s.png'), auto;">
               <div class="title-bar-text">About</div>
               <div class="title-bar-controls">
               </div>
@@ -425,7 +448,7 @@
               <p style="margin: 0%;">i do art and animation(i think) and do some music(i kinda just do guitar) and programming as a hobby.</p>
               <p style="margin: 0%;">im not sure what i want to be or pursue. hopefully all four but if not, probably just art then</p>
               <p style="margin-bottom: 0%;"> things i like: minecraft, ultrakill, ut/dr, genshin, zzz, omori, isat, portal</p>
-              <p style="margin: 0%;">gorillaz, arctic monkeys, bmth, eve, yoasobi, tøp, linkin park, mcr</p>
+              <p style="margin: 0%;">gorillaz, arctic monkeys, bmth, spiritbox, eve, yoasobi, tøp, linkin park, mcr</p>
               <p style="margin: 0%;">evangelion, arcane, alnst (i dont watch much help)</p>
               <p id="art">on the left, you can see many cool arts of   me</p>
               <section class="field-row" style="justify-content: flex-end">
@@ -436,7 +459,7 @@
         </div>
         
         <div class="window" style="width: 250px; height: 270px; top: 55px; left: 63px; flex-wrap: nowrap;" id="window">
-            <div class="title-bar" style="cursor: move;">
+            <div class="title-bar" style="cursor: url('/main/image/cur/move_s.png'), auto;">
               <div class="title-bar-text">random gif i put here for no reason</div>
               <div class="title-bar-controls">
                 <button aria-label="Minimize" onclick="
@@ -458,7 +481,7 @@
             </div>
         </div>
         <div class="window" style="width: 250px; height: 270px; top: 1102px; left: 840px; flex-wrap: nowrap;" id="window2">
-            <div class="title-bar" style="cursor: move;">
+            <div class="title-bar" style="cursor: url('/main/image/cur/move_s.png'), auto;">
               <div class="title-bar-text">random gif i put here for no reason</div>
               <div class="title-bar-controls">
                 <button aria-label="Minimize" onclick="
@@ -480,7 +503,7 @@
             </div>
         </div>
         <div class="window" style="width: 250px; height: 270px; top: 986px; left: 1229px; flex-wrap: nowrap;" id="window3">
-            <div class="title-bar" style="cursor: move;">
+            <div class="title-bar" style="cursor: url('/main/image/cur/move_s.png'), auto;">
               <div class="title-bar-text">random gif i put here for no reason</div>
               <div class="title-bar-controls">
                 <button aria-label="Minimize" onclick="
@@ -502,7 +525,7 @@
             </div>
         </div>
         <div class="window" style="width: 250px; height: 270px; top: 1186px; left: 1569px; flex-wrap: nowrap;" id="window4">
-            <div class="title-bar" style="cursor: move;">
+            <div class="title-bar" style="cursor: url('/main/image/cur/move_s.png'), auto;">
               <div class="title-bar-text">random gif i put here for no reason</div>
               <div class="title-bar-controls">
                 <button aria-label="Minimize" onclick="

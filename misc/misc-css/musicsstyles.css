@@ -10,6 +10,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 .grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -22,9 +23,9 @@ body {
     height: 300px;
 }
 
-#albumcover {
-    cursor: pointer;
-}
+#albumcover, a, button {
+    cursor: url('/main/image/cur/select.png'), auto;
+  }
 
 @-webkit-keyframes hvr-ripple-out {
     100% {

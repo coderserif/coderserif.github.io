@@ -11,9 +11,9 @@ body {
 }
 
 a, button {
-    cursor: pointer;
-}
-
+    cursor: url('/main/image/cur/select.png'), auto;
+  }
+  
 h1 {
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 5px 5px 2px red;
