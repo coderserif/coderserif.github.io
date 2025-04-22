@@ -53,5 +53,8 @@
     "dream": {"title": "Dream", "description": " ", "image": "/misc/comix/51.png"},
     "cat-comic-part-one": {"title": "Cat Comic Part One", "description": "[SCHOOL] will her wish be fulfilled? find out in part two", "image": "/misc/comix/52.png"},
     "cat-comic-part-two": {"title": "Cat Comic Part Two", "description": "[SCHOOL] her wish has been fulfilled", "image": "/misc/comix/53.png"},
-    "assistance": {"title": "Assistance", "description": "time to buy more snacks", "image": "/misc/comix/54.png"}
+    "assistance": {"title": "Assistance", "description": "time to buy more snacks", "image": "/misc/comix/54.png"},
+    "moving-up1": {"title": "Moving Up Part One", "description": "[SCHOOL] OMORI Inspired!", "image": "/misc/comix/55.png"},
+    "moving-up2": {"title": "Moving Up Part Two", "description": "[SCHOOL] OMORI Inspired!", "image": "/misc/comix/56.png"},
+    "medals": {"title": "Medals", "description": "[SCHOOL] no one can have too much medals *cling kling clang*", "image": "/misc/comix/57.png"}
 }

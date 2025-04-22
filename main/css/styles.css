@@ -4,9 +4,9 @@ body {
     
     cursor: url('/main/image/cur/arrow.png'), auto;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
 html {

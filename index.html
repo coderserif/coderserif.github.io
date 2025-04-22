@@ -77,7 +77,7 @@
             const startdragging = "startdragging";
             const stopdragging = "stopdragging";
 
-            var draggable = (function(module){
+            var draggable = (function(){
                 const startdraggingEvent = new CustomEvent(startdragging);
                 const stopdraggingEvent = new CustomEvent(stopdragging);
     
@@ -167,7 +167,8 @@
                     registerEvents("mousedown", "mousemove", "mouseup")
                     registerEvents("touchstart", "touchmove", "touchend", (e) => e.touches[0])
                 };
-            }(draggable || {}));
+            }());
+            
 
             const gifs = [
                         "https://media1.tenor.com/m/y8zjaIK8rpoAAAAC/cat-on-skateboard-cat.gif",
@@ -424,19 +425,21 @@
                     </div>
                 </div>
                 <div style="margin-right: 100px;" align="right">
-                    <h4>website update as of MAR 9 2025: </h4>
-                    <h4>website visual update + blog post. enjoy</h4>
-                    <img src="https://media1.tenor.com/m/3pGwdYcs7Z4AAAAC/update-update-is.gif" alt="" width="600px" height="200px">
+                    <h4>website update as of APR 22 2025: </h4>
+                    <h4>NEW COMICS WOOWWWHOWHHOW</h4>
+                    <img src="/misc/comix/55.png" alt="" width="110px" height="200px">
+                    <img src="/misc/comix/56.png" alt="" width="110px" height="200px">
+                    <img src="/misc/comix/57.png" alt="" width="110px" height="200px">
                     <br>
                     <br>
                     <br>
-                    <a href="/misc/blogs/mar92025.html"> click here to bless your eyeballs with content</a>
+                    <a href="/misc/comix?comix=medals"> click here to see MAGNIFICENT ART</a>
                 </div>
             </div>
             </div>
         </div>
         
-        <div class="window" style="top: 542px; left: 580px; flex-wrap: nowrap; margin: 0%;" id="window-about">
+        <div class="window" style="top: 542px; left: 580px; flex-wrap: nowrap; margin: 0px;" id="window-about">
             <div class="title-bar" style="cursor: url('/main/image/cur/move_s.png'), auto;">
               <div class="title-bar-text">About</div>
               <div class="title-bar-controls">
@@ -445,11 +448,11 @@
             <div class="window-body">
                 <h2>about</h2>
               <p>hi my name is serif. this is  my my  website.</p>
-              <p style="margin: 0%;">i do art and animation(i think) and do some music(i kinda just do guitar) and programming as a hobby.</p>
-              <p style="margin: 0%;">im not sure what i want to be or pursue. hopefully all four but if not, probably just art then</p>
-              <p style="margin-bottom: 0%;"> things i like: minecraft, ultrakill, ut/dr, genshin, zzz, omori, isat, portal</p>
-              <p style="margin: 0%;">gorillaz, arctic monkeys, bmth, spiritbox, eve, yoasobi, tøp, linkin park, mcr</p>
-              <p style="margin: 0%;">evangelion, arcane, alnst (i dont watch much help)</p>
+              <p style="margin: 0px;">i do art and animation(i think) and do some music(i kinda just do guitar) and programming as a hobby.</p>
+              <p style="margin: 0px;">im not sure what i want to be or pursue. hopefully all four but if not, probably just art then</p>
+              <p style="margin-bottom: 0px;"> things i like: minecraft, ultrakill, ut/dr, genshin, zzz, omori, isat, portal</p>
+              <p style="margin: 0px;">gorillaz, arctic monkeys, bmth, spiritbox, eve, yoasobi, tøp, linkin park, mcr</p>
+              <p style="margin: 0px;">evangelion, arcane, alnst (i dont watch much help)</p>
               <p id="art">on the left, you can see many cool arts of   me</p>
               <section class="field-row" style="justify-content: flex-end">
                 <button onclick="document.body.querySelector('#window-about').style.display = 'none'">ok i dont care</button>
@@ -565,9 +568,7 @@
           <hr>
           <p align="center" style="font-family: 'Times New Roman', Times, serif;">if you have a problem about this site (you dont) you can tell me <a href="https://www.youtube.com/watch?v=qiSPOJFi4L8" target="_blank">here</a></p>
           <script src="/misc/misc-js/comix.js"></script>
-          <script>        
-
-           
+          <script>
 
             var highestZindex = 0;
     
