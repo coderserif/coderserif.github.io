@@ -18,26 +18,43 @@
     <title>Serif's Comix</title>
   </head>
   <body id="body">
-    <br>
-    <br>
-    <img src="/misc/comix/comixtitle.png" alt="Serif's Comix" id="title">
-    <br>
+    
+   
+    <div style="position: fixed; left: 1%;">
+      <img src="/misc/comix/comixtitle.png" alt="Serif's Comix" id="title" >
     <a href=https://coderserif.github.io>back to main page</a>
-    <hr />
     <figcaption>
       website hosting by <a href="https://pages.github.com/">Github Pages</a>
     </figcaption>
     <figcaption>
       code help by <a href="https://ogghostjelly.github.io/">OgGhostJelly</a>
     </figcaption>
-    <hr />
-    <div class="dropdown">
-        <button class="dropbtn">Comics  &#10549;</button>
-        <div id="comix-dropdown" class="dropdown-content"></div>
     </div>
-
+    
     <center id="comix">
+      
       <h2 id="comix-title"></h2>
+      <div  style="display: flex; justify-content: center;">
+        <div>
+          <a id="comix-arrow-left">
+            <img align="left" src="comix/arrow-left.png" width="40%">
+          </a>
+        </div>
+        <div>
+          <div class="dropdown">
+            <button class="dropbtn">Comics  &#10549;</button>
+            <div id="comix-dropdown" class="dropdown-content"></div>
+          </div>
+        </div>
+        <div>
+          <a id="comix-arrow-right">
+            <img align="right" src="comix/arrow-right.png" width="40%">
+          </a>
+        </div>
+      </div>
+      
+      
+    <br>
 
       <a id="comix-image-link">
         <img id="comix-image" width="500px">
@@ -45,13 +62,11 @@
 
       <p id="comix-description"></p>
 
-      <a id="comix-arrow-left">
-        <img align="left" src="comix/arrow-left.png">
-      </a>
-      <a id="comix-arrow-right">
-        <img align="right" src="comix/arrow-right.png">
-      </a>
+      
+      
     </center>
+    
+    
   </body>
 
   <!-- This script needs to go at the bottom -->
